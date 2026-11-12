@@ -15,7 +15,7 @@ const tests = String.raw`
 const results=[];
 const assert=(condition,message='Assertion failed')=>{if(!condition)throw Error(message);};
 const pause=()=>new Promise(resolve=>setTimeout(resolve,40));
-const hidden=row=>getComputedStyle(row).display==='none';
+const hidden=row=>{const style=getComputedStyle(row);return style.display==='none'||style.visibility==='hidden';};
 async function test(name,fn){try{assert(typeof ChatContentFilter==='function','Five room tools absent');await fn();results.push({name,pass:true});}catch(e){results.push({name,pass:false,error:e.message});}}
 const chat=document.getElementById('chatroom');
 const makeRow=(body,user='小明',isEntry=false)=>{const row=document.createElement('div');row.className='webcast-chatroom___item';

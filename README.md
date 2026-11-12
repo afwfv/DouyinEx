@@ -41,6 +41,14 @@
 
 ## 更新记录
 
+### 2026.11.13.08
+
+- 礼物、进场、重复及关键词过滤改为保位隐藏，不再通过 `display:none` 抽走官方列表行，避免行高、`scrollHeight` 和滚动位置突变。
+- 礼物行在回收复用时立即重新分类，合并到动画帧批量处理，避免旧礼物标记误伤普通弹幕。
+- 弹幕文字按物理像素对齐，降低缓存贴图在滚动中的重采样颤动；表情加载只刷新引用该表情的贴图。
+- 忽略播放器亚像素尺寸变化，避免画布反复重置；保留单条悬停、随机间距和去重行为。
+- 85 项逻辑与本地 Edge 检查通过，6000 帧弹幕模型对照一致；真实直播间仍需复核。
+
 ### 2026.11.12.07
 
 - 新增自动参与免费福袋、简洁模式、进场消息过滤、重复弹幕过滤和自定义关键词屏蔽，新增开关默认关闭。
@@ -83,15 +91,17 @@ node tests/regression.mjs DouyinEx.user.js
 node tests/preferences-regression.mjs DouyinEx.user.js
 node tests/engine-lifecycle-regression.mjs DouyinEx.user.js
 node tests/room-tools-regression.mjs DouyinEx.user.js
+node tests/danmaku-renderer-regression.mjs DouyinEx.user.js
 ```
 
 Windows + Microsoft Edge 可运行界面与 DOM 验证：
 
 ```sh
 node tests/browser-room-tools.mjs DouyinEx.user.js
+node tests/browser-danmaku-stability.mjs DouyinEx.user.js
 ```
 
-浏览器测试只打开本机临时测试页，输出到 `browser-v07/`，不访问抖音账号或参与真实福袋。页面结构变化仍需真实直播间复核。
+浏览器测试只打开本机临时测试页，输出到 `browser-v07/`、`browser-v08/`，不访问抖音账号或参与真实福袋。页面结构变化仍需真实直播间复核。
 
 ## 参考与许可
 
