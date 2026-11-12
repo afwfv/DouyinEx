@@ -2,7 +2,7 @@
 // @name         DouyinEx - 抖音直播间增强插件
 // @namespace    https://github.com/afwfv/DouyinEx
 // @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
-// @version      2026.11.12.05
+// @version      2026.11.12.06
 // @description  弹幕不掉帧、弹幕悬停、+1、回复、自动最高画质、屏蔽礼物特效、屏蔽送礼弹幕、PK真实分数
 // @author       DD (afwfv)
 // @homepageURL  https://github.com/afwfv/DouyinEx
@@ -85,8 +85,12 @@
         } else if (data.type === "stats") this.onStats(data.stats);
         else if (data.type === "error") this.fail(new Error(data.message));
         else if (data.type === "snapshot") {
-          this.snapshots.get(data.requestId)?.(data);
-          this.snapshots.delete(data.requestId);
+          const request = this.snapshots.get(data.requestId);
+          if (request) {
+            this.snapshots.delete(data.requestId);
+            clearTimeout(request.timer);
+            request.resolve(data);
+          }
         }
       };
       try {
@@ -179,16 +183,14 @@
       this.send({ type: "visibility", visible: visible2 });
     }
     snapshot() {
+      if (this.dead) return Promise.reject(new Error("Worker is closed"));
       const requestId = ++this.snapshotId;
       return new Promise((resolve, reject) => {
         const timer = setTimeout(() => {
           this.snapshots.delete(requestId);
           reject(new Error("Worker snapshot timeout"));
         }, 2e3);
-        this.snapshots.set(requestId, (value) => {
-          clearTimeout(timer);
-          resolve(value);
-        });
+        this.snapshots.set(requestId, { resolve, reject, timer });
         this.send({ type: "snapshot", requestId });
       });
     }
@@ -203,6 +205,10 @@
       this.worker.terminate();
       URL.revokeObjectURL(this.url);
       this.pending = [];
+      for (const request of this.snapshots.values()) {
+        clearTimeout(request.timer);
+        request.reject(new Error("Worker is closed"));
+      }
       this.snapshots.clear();
     }
   };
@@ -1641,19 +1647,33 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     } catch {
     }
   }
-  function nextFrame() {
-    return new Promise((resolve) => requestAnimationFrame(() => resolve()));
+  function waitForTask(schedule, cancel, signal) {
+    if (signal?.aborted) return Promise.resolve(false);
+    return new Promise((resolve) => {
+      const finish = (completed) => {
+        cancel(handle);
+        signal?.removeEventListener("abort", aborted);
+        resolve(completed);
+      };
+      const aborted = () => finish(false);
+      const handle = schedule(() => finish(true));
+      signal?.addEventListener("abort", aborted, { once: true });
+    });
   }
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
+  function nextFrame(signal) {
+    return waitForTask(requestAnimationFrame, cancelAnimationFrame, signal);
   }
-  async function waitFor(pick, timeout = 4e3, interval = 120) {
+  function sleep(ms, signal) {
+    return waitForTask((done) => setTimeout(done, ms), clearTimeout, signal);
+  }
+  async function waitFor(pick, timeout = 4e3, interval = 120, signal) {
     const deadline = performance.now() + timeout;
-    for (; ;) {
+    while (!signal?.aborted) {
       const value = pick();
       if (value) return value;
-      if (performance.now() > deadline) return void 0;
-      await sleep(interval);
+      const remaining = deadline - performance.now();
+      if (remaining <= 0) return void 0;
+      await sleep(Math.min(interval, remaining), signal);
     }
   }
   function fireEvents(node, types) {
@@ -1717,7 +1737,9 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     shieldDone = false;
     busy = false;
     attempts = 0;
-    timer;
+    timer = 0;
+    abort = new AbortController();
+    qualityTimers = new Set();
     values;
     read() {
       return { ...this.values };
@@ -1732,10 +1754,13 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         pkNumbers: PREF_PK_NUMBERS
       };
       writeFlag(keyNames[key], this.values[key]);
-      const affectsRoom = key === "autoQuality" || key === "shieldGift" || key === "hideGiftDanmaku";
+      const affectsRoom = key === "autoQuality" || key === "shieldGift";
       if (affectsRoom) {
-        this.qualityDone = this.shieldDone = false;
+        this.cancelPending();
+        if (key === "autoQuality") this.qualityDone = false;
+        else this.shieldDone = false;
         this.attempts = 0;
+        this.watchQuality();
         this.onChange(this.read());
         void this.apply();
       } else this.onChange(this.read());
@@ -1743,11 +1768,23 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     }
     attach(roomId) {
       if (!roomId || this.roomId === roomId) return;
+      this.cancelPending();
       this.roomId = roomId;
       this.qualityDone = this.shieldDone = false;
       this.attempts = 0;
       void this.apply();
-      for (const delay of [3e3, 6e3, 1e4]) setTimeout(() => this.checkQuality(), delay);
+      this.watchQuality();
+    }
+    watchQuality() {
+      if (!this.roomId || !this.values.autoQuality) return;
+      const signal = this.abort.signal;
+      for (const delay of [3e3, 6e3, 1e4]) {
+        const timer = setTimeout(() => {
+          this.qualityTimers.delete(timer);
+          if (!signal.aborted) this.checkQuality();
+        }, delay);
+        this.qualityTimers.add(timer);
+      }
     }
     checkQuality() {
       if (!this.roomId || !this.values.autoQuality || this.busy) return;
@@ -1756,69 +1793,101 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.qualityDone = false;
       void this.apply();
     }
+    cancelPending() {
+      this.abort.abort();
+      this.abort = new AbortController();
+      this.busy = false;
+      clearTimeout(this.timer);
+      this.timer = 0;
+      for (const timer of this.qualityTimers) clearTimeout(timer);
+      this.qualityTimers.clear();
+    }
     detach() {
       this.roomId = "";
-      clearTimeout(this.timer);
+      this.cancelPending();
     }
     schedule(delay) {
       clearTimeout(this.timer);
-      this.timer = setTimeout(() => void this.apply(), delay);
+      const signal = this.abort.signal;
+      this.timer = setTimeout(() => {
+        this.timer = 0;
+        if (!signal.aborted) void this.apply();
+      }, delay);
     }
     async apply() {
       if (!this.roomId || document.hidden || this.busy) return;
       if ((this.qualityDone || !this.values.autoQuality) && (this.shieldDone || !this.values.shieldGift)) return;
+      const signal = this.abort.signal;
       this.busy = true;
       try {
-        if (!this.qualityDone && this.values.autoQuality) this.qualityDone = await this.ensureQuality();
-        if (!this.shieldDone && this.values.shieldGift) this.shieldDone = await this.ensureShield();
+        if (!this.qualityDone && this.values.autoQuality) {
+          const ready = await this.ensureQuality(signal);
+          if (signal.aborted) return;
+          this.qualityDone = ready;
+        }
+        if (!this.shieldDone && this.values.shieldGift) {
+          const ready = await this.ensureShield(signal);
+          if (signal.aborted) return;
+          this.shieldDone = ready;
+        }
       } catch (error) {
         void 0 && console.warn("[douyin-ex] \u76F4\u64AD\u95F4\u8BBE\u7F6E\u5E94\u7528\u5931\u8D25:", error instanceof Error ? error.message : error);
       } finally {
-        this.busy = false;
+        if (!signal.aborted) this.busy = false;
       }
+      if (signal.aborted) return;
       const qualityReady = this.qualityDone || !this.values.autoQuality;
       const shieldReady = this.shieldDone || !this.values.shieldGift;
       if (!qualityReady || !shieldReady) {
         if (++this.attempts < 20) this.schedule(500 + this.attempts * 250);
       }
     }
-    async ensureQuality() {
-      const options = await waitFor(() => qualityOptions().length ? qualityOptions() : void 0, 4e3);
-      if (!options) return false;
+    async ensureQuality(signal = this.abort.signal) {
+      const options = await waitFor(() => {
+        const available = qualityOptions();
+        return available.length ? available : void 0;
+      }, 4e3, 120, signal);
+      if (signal.aborted || !options) return false;
       const target = highestQuality(options);
       if (!target) return false;
       const label = qualityLabel();
       if (label === target.label) return true;
       if (!label) return false;
       pointerClick(target.box);
-      await nextFrame();
-      const settled = await waitFor(() => qualityLabel() === target.label ? true : void 0, 2500, 150);
-      return settled === true;
+      if (!await nextFrame(signal)) return false;
+      const settled = await waitFor(() => qualityLabel() === target.label ? true : void 0, 2500, 150, signal);
+      return !signal.aborted && settled === true;
     }
-    async ensureShield() {
-      const icon = await waitFor(() => document.querySelector('[data-e2e="gift-setting"]'), 4e3);
-      if (!icon) return false;
-      let toggle = shieldSwitch();
-      if (!toggle) {
-        pointerHover(icon, true);
-        toggle = await waitFor(shieldSwitch, 2500);
+    async ensureShield(signal = this.abort.signal) {
+      const icon = await waitFor(() => document.querySelector('[data-e2e="gift-setting"]'), 4e3, 120, signal);
+      if (signal.aborted || !icon) return false;
+      let hovered = false;
+      const closeMenu = () => {
+        if (!hovered) return;
+        hovered = false;
+        if (icon.isConnected !== false) pointerHover(icon, false);
+      };
+      signal.addEventListener("abort", closeMenu, { once: true });
+      try {
+        let toggle = shieldSwitch();
+        if (!toggle) {
+          hovered = true;
+          pointerHover(icon, true);
+          toggle = await waitFor(shieldSwitch, 2500, 120, signal);
+        }
+        if (signal.aborted || !toggle) return false;
+        const state = shieldEnabled(toggle);
+        if (state === null) return false;
+        if (!state) {
+          pointerClick(toggle.firstElementChild ?? toggle);
+          if (!await nextFrame(signal)) return false;
+          await waitFor(() => shieldEnabled(shieldSwitch()) === true, 1500, 120, signal);
+        }
+        return !signal.aborted && shieldEnabled(shieldSwitch()) === true;
+      } finally {
+        signal.removeEventListener("abort", closeMenu);
+        closeMenu();
       }
-      if (!toggle) {
-        pointerHover(icon, false);
-        return false;
-      }
-      let state = shieldEnabled(toggle);
-      if (state === null) {
-        pointerHover(icon, false);
-        return false;
-      }
-      if (!state) {
-        pointerClick(toggle.firstElementChild ?? toggle);
-        await nextFrame();
-        await waitFor(() => shieldEnabled(shieldSwitch()) === true, 1500, 120);
-      }
-      pointerHover(icon, false);
-      return shieldEnabled(shieldSwitch()) === true;
     }
   };
 
@@ -1919,7 +1988,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         void 0 && console.warn("[douyin-ex] 20 \u79D2\u5185\u672A\u627E\u5230\u53EF\u9A8C\u8BC1\u7684\u76F4\u64AD\u9002\u914D\u5165\u53E3\uFF0C\u5DF2\u4FDD\u7559\u539F\u751F\u9875\u9762\u3002\u3002");
       }, 2e4);
     };
-    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.12.05" });
+    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.12.06" });
     window.addEventListener("pagehide", () => {
       stopProbe();
       clearInterval(roomWatch);
