@@ -2,8 +2,8 @@
 // @name         DouyinEx - 抖音直播间增强插件
 // @namespace    https://github.com/afwfv/DouyinEx
 // @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
-// @version      2026.11.12.06
-// @description  弹幕不掉帧、弹幕悬停、+1、回复、自动最高画质、屏蔽礼物特效、屏蔽送礼弹幕、PK真实分数
+// @version      2026.11.12.07
+// @description  弹幕悬停、+1、回复、最高画质、礼物屏蔽、PK真实分数、自动免费福袋、简洁模式、进场/重复/关键词过滤
 // @author       DD (afwfv)
 // @homepageURL  https://github.com/afwfv/DouyinEx
 // @supportURL   https://github.com/afwfv/DouyinEx/issues
@@ -213,6 +213,578 @@
     }
   };
 
+/*
+Adapted lottery eligibility/parser and DOM selector references from
+https://github.com/Almighty-ap/DouyinEX
+Pinned commit: 2ad3642899e439c7a24b14eb9ee0f57442de872c
+Local changes: abortable per-room automation, confirmation checks, reversible UI,
+body-based bounded duplicate filtering and literal keyword rules.
+
+MIT License
+
+Copyright (c) 2026 DouyinEX
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+  // src/features/lottery-rules.ts
+const COMMENT_BTN_RE =
+  /^(?:点击|立即)?(?:发送口令|一键发送|一键评论|发表评论|发送评论|评论参与|评论并参与|一键评论参与|去发表评论|一键发评论|一键发表评论|发评论参与|发送评论参与|发评论参与福袋|一键发评论参与福袋)(?:并参与|参与福袋|参与抽奖|参与)?(?:[（(](?:自动发送|自动评论|发送口令)[）)])?[>›»]?$/;
+
+const DIRECT_JOIN_BTN_RE =
+  /^(?:手动参与|立即参与|参与福袋|参与抽奖|一键参与|立即抽奖|免费参与|抢福袋|报名)$/;
+
+const FOLLOW_BTN_RE =
+  /^(?:关注|去关注|关注主播|关注参与|关注并参与|立即关注)(?:参与福袋|参与)?$/;
+
+const JOINED_BTN_RE = /^(?:已参与|已成功参与|等待开奖|参与成功|报名成功)$/;
+
+const PAID_BTN_RE = /粉丝团|灯牌|钻石|钻|抖币|付费|充值|升级|亲密度/;
+
+function compact(text) {
+  return String(text || "").replace(/\s+/g, "").trim();
+}
+
+/** 解析倒计时文本（MM:SS 或 HH:MM:SS）为秒数，无效返回 null */
+function parseCountdownSeconds(text) {
+  if (!text) return null;
+  const s = String(text).trim();
+  if (!s || s.includes("--:--")) return null;
+  const m = s.match(/(?:(\d{1,2}):)?(\d{1,2}):([0-5]\d)/);
+  if (!m) return null;
+  const hours = m[1] ? parseInt(m[1], 10) : 0;
+  const mins = parseInt(m[2], 10);
+  const secs = parseInt(m[3], 10);
+  if ([hours, mins, secs].some(Number.isNaN) || mins > 59) return null;
+  const total = hours * 3600 + mins * 60 + secs;
+  return total > 0 && total <= 7200 ? total : null;
+}
+
+/** 从评论条件描述中提取口令正文；若仅是泛指指令（如“去发表评论”）则返回空串 */
+function extractCommentCommand(text) {
+  if (!text) return "";
+  const raw = String(text)
+    .replace(/\s*(?:未达成|已达成|未完成|已完成)\s*$/, "")
+    .trim();
+  const quoted = raw.match(/(?:发送|发表|评论|口令)[^\n“「"']{0,8}[“「"']([^”」"'\n]{1,100})[”」"']/);
+  if (quoted) return quoted[1].trim();
+  const labelled = raw.match(/(?:发送评论|发表评论|发送口令|评论内容|口令|评论)\s*[：:]\s*([^\n]{1,100})/);
+  if (labelled) return labelled[1].trim();
+  return "";
+}
+
+/** 对单条参与条件进行分类与完成态归一 */
+function classifyConditionItem(item = {}) {
+  const requirement = String(item.requirement || "")
+    .replace(/\s*(?:未达成|已达成|未完成|已完成)\s*$/, "")
+    .trim();
+  const status = String(item.status || "").trim();
+  const completed = status === "已达成" || status === "已完成";
+  const cleanReq = compact(requirement);
+
+  if (!cleanReq || cleanReq === "参与条件") {
+    return { type: "ignore", requirement, status, completed: true, command: "" };
+  }
+  if (cleanReq === "手动参与") {
+    return { type: "manual", requirement, status, completed: true, command: "" };
+  }
+  // 评论口令本身可能包含“关注”“粉丝团”等文字，因此优先判定是否为评论类条件
+  if (/^(?:发送|发表|一键|去发表)?(?:评论|口令)|^发送[“「"':：]/.test(cleanReq)) {
+    return {
+      type: "comment",
+      requirement,
+      status,
+      completed,
+      command: extractCommentCommand(requirement),
+    };
+  }
+  if (/粉丝团|灯牌|钻石|钻|抖币|亲密度|会员/.test(cleanReq)) {
+    return { type: "fansclub", requirement, status, completed, command: "" };
+  }
+  if (/分享|转发/.test(cleanReq)) {
+    return { type: "share", requirement, status, completed, command: "" };
+  }
+  if (/关注/.test(cleanReq)) {
+    return { type: "follow", requirement, status, completed, command: "" };
+  }
+  if (/观看|看播|停留/.test(cleanReq)) {
+    return { type: "watch", requirement, status, completed, command: "" };
+  }
+  return { type: "unknown", requirement, status, completed, command: "" };
+}
+
+/** 从弹窗纯文本中兜底提取「条件描述 + 已达成/未达成」列表 */
+function parseConditionsFromText(text) {
+  if (!text) return [];
+  const items = [];
+  const re = /([^\n]+?)\s*(未达成|已达成|未完成|已完成)(?=\s|$)/g;
+  for (const m of String(text).matchAll(re)) {
+    const req = m[1].replace(/^[\s•·\-*]+/, "").trim();
+    if (!req || req === "参与条件") continue;
+    items.push({ requirement: req, status: m[2] });
+  }
+  return items;
+}
+
+function isCommentJoinButtonText(text) {
+  return COMMENT_BTN_RE.test(compact(text));
+}
+
+function isDirectJoinButtonText(text) {
+  return DIRECT_JOIN_BTN_RE.test(compact(text));
+}
+
+function isFollowButtonText(text) {
+  return FOLLOW_BTN_RE.test(compact(text));
+}
+
+function isPaidButtonText(text) {
+  return PAID_BTN_RE.test(compact(text));
+}
+
+/**
+ * 评估当前福袋弹窗是否可免费代抢及下一步动作：
+ * - already_joined: 本轮已参与，关闭弹窗等待开奖
+ * - skip: 含未达成付费/分享/未知条件，或需关注但未开启自动关注，本轮跳过
+ * - wait_watch: 含未达成看播时长且剩余时间充足，先关弹窗稍后复查
+ * - follow_then_join: 需关注主播且已开启自动关注，先点关注再点参与
+ * - join_comment: 触发一键发评论参与（只触发官方按钮）
+ * - join_direct: 无门槛或条件已全部达成，直接点击参与
+ */
+function evaluateLotteryEligibility({
+  conditions = [],
+  alreadyJoined = false,
+  buttonText = "",
+  allowFollow = false,
+  remainingSeconds = null,
+} = {}) {
+  const cleanBtn = compact(buttonText);
+
+  if (alreadyJoined || JOINED_BTN_RE.test(cleanBtn)) {
+    return { action: "already_joined", command: "", reason: "本轮已参与" };
+  }
+
+  // 安全闸门：无论条件如何解析，只要主按钮带粉丝团/钻石等付费字样一律跳过
+  if (isPaidButtonText(cleanBtn)) {
+    return { action: "skip", command: "", reason: "按钮含粉丝团或付费字样" };
+  }
+
+  const classified = conditions
+    .map(classifyConditionItem)
+    .filter((c) => c.type !== "ignore" && c.type !== "manual");
+
+  const blocked = classified.find(
+    (c) => !c.completed && (c.type === "fansclub" || c.type === "share" || c.type === "unknown"),
+  );
+  if (blocked) {
+    const label =
+      blocked.type === "fansclub"
+        ? "需付费粉丝团/灯牌"
+        : blocked.type === "share"
+          ? "需分享直播间"
+          : `含未支持条件（${blocked.requirement}）`;
+    return { action: "skip", command: "", reason: label };
+  }
+
+  const needsFollow = classified.some((c) => c.type === "follow" && !c.completed);
+  if (needsFollow && !allowFollow) {
+    return { action: "skip", command: "", reason: "需关注主播（未开启自动关注）" };
+  }
+
+  const needsWatch = classified.some((c) => c.type === "watch" && !c.completed);
+  if (needsWatch) {
+    if (remainingSeconds !== null && remainingSeconds <= 25) {
+      return { action: "skip", command: "", reason: "看播时长未达成且临近开奖" };
+    }
+    const retryDelaySec =
+      remainingSeconds !== null ? Math.max(5, Math.min(60, remainingSeconds - 25)) : 30;
+    return {
+      action: "wait_watch",
+      command: "",
+      retryDelaySec,
+      reason: "等待看播时长达标",
+    };
+  }
+
+  const commentItem =
+    classified.find((c) => c.type === "comment" && !c.completed) ||
+    classified.find((c) => c.type === "comment");
+  const command = commentItem ? commentItem.command : "";
+
+  if (needsFollow || (classified.length === 0 && isFollowButtonText(cleanBtn))) {
+    if (!allowFollow) {
+      return { action: "skip", command: "", reason: "需关注主播（未开启自动关注）" };
+    }
+    return { action: "follow_then_join", command, reason: "先自动关注主播再参与" };
+  }
+
+  const needsComment = classified.some((c) => c.type === "comment" && !c.completed);
+  if (needsComment || isCommentJoinButtonText(cleanBtn)) {
+    return { action: "join_comment", command, reason: "满足发评论参与条件" };
+  }
+
+  if (
+    (classified.length > 0 && classified.every((c) => c.completed)) ||
+    isDirectJoinButtonText(cleanBtn)
+  ) {
+    return { action: "join_direct", command: "", reason: "无限制或条件已全部达成" };
+  }
+
+  return { action: "skip", command: "", reason: "未识别到安全的免费参与入口" };
+}
+
+/** 解析开奖结果弹窗文本 */
+function parseLotteryResultText(text) {
+  const s = String(text || "").trim();
+  if (!s) return null;
+  if (/恭喜.{0,12}(?:中奖|获得|抽中)|领取奖品|中奖名单|中奖啦/.test(s)) return { status: "won", text: s };
+  if (/没抽中|未中奖|没中奖|未抽中|没中|遗憾|下次|未能|空手/.test(s)) {
+    return { status: "lost", text: s };
+  }
+  if (/中奖|恭喜|获得|抽中|幸运|赢得了|领取/.test(s)) {
+    return { status: "won", text: s };
+  }
+  return { status: "unknown", text: s };
+}
+
+  // src/features/room-tools.ts
+  function normalizedChatText(value) {
+    return String(value ?? "").normalize("NFKC").replace(/[\u200b-\u200d\ufeff]/g, "").replace(/\s+/g, " ").trim().toLocaleLowerCase();
+  }
+  var MessageFilter = class {
+    values = {};
+    signature = "";
+    keywords = [];
+    seen = new Map();
+    configure(values = {}) {
+      const signature = JSON.stringify([!!values.hideEnter, !!values.hideRepeat, !!values.filterKeywords, values.blockedKeywords || ""]);
+      if (signature === this.signature) return false;
+      this.signature = signature;
+      this.values = { ...values };
+      this.keywords = [...new Set(String(values.blockedKeywords || "").slice(0, 4000).split(/\r?\n/).map(normalizedChatText).filter(Boolean))].slice(0, 100);
+      this.reset();
+      return true;
+    }
+    reset() { this.seen.clear(); }
+    accept(message, now = Date.now()) {
+      if (this.values.hideEnter && message.isEnter) return false;
+      const text = normalizedChatText(message.plainText);
+      if (!text) return true;
+      if (this.values.filterKeywords && this.keywords.some((word) => text.includes(word))) return false;
+      if (!this.values.hideRepeat || message.isEnter) return true;
+      for (const [key, time] of this.seen) {
+        if (now - time < 10000 && now >= time) break;
+        this.seen.delete(key);
+      }
+      if (this.seen.has(text)) return false;
+      if (this.seen.size >= 1000) this.seen.delete(this.seen.keys().next().value);
+      this.seen.set(text, now);
+      return true;
+    }
+  };
+
+  var CHAT_CONTENT_ROWS = ".webcast-chatroom___item,.webcast-chatroom__room-message";
+  var CONTENT_HIDDEN_CLASS = "douyin-ex-content-hidden";
+  var ChatContentFilter = class {
+    filter = new MessageFilter();
+    handled = new WeakMap();
+    target = null;
+    timer = 0;
+    frame = 0;
+    pending = new Set();
+    style = null;
+    observer = null;
+    roomId = "";
+    configure(values, roomId = this.roomId) {
+      const changed = this.filter.configure(values);
+      if (changed || roomId !== this.roomId) {
+        this.roomId = roomId;
+        this.filter.reset();
+        this.handled = new WeakMap();
+        this.restore();
+        if (this.timer) { this.scan(); this.rescan(); }
+      }
+      return changed;
+    }
+    enabled() { const v = this.filter.values; return v.hideEnter || v.hideRepeat || (v.filterKeywords && this.filter.keywords.length); }
+    start() {
+      if (this.timer) return;
+      this.style = document.createElement("style");
+      this.style.textContent = `#chatroom .${CONTENT_HIDDEN_CLASS}{display:none!important}`;
+      (document.head ?? document.documentElement).append(this.style);
+      this.observer = new MutationObserver((records) => {
+        if (!this.enabled()) return;
+        for (const mutation of records) {
+          const parent = mutation.target.nodeType === 1 ? mutation.target : mutation.target.parentElement;
+          const row = parent?.closest?.(CHAT_CONTENT_ROWS);
+          if (row) this.pending.add(row);
+          for (const added of mutation.addedNodes || []) {
+            if (added.nodeType !== 1) continue;
+            if (added.matches(CHAT_CONTENT_ROWS)) this.pending.add(added);
+            for (const child of added.querySelectorAll(CHAT_CONTENT_ROWS)) this.pending.add(child);
+          }
+        }
+        if (this.pending.size && !this.frame) this.frame = requestAnimationFrame(() => {
+          this.frame = 0;
+          for (const row of this.pending) if (row.isConnected) this.apply(row);
+          this.pending.clear();
+        });
+      });
+      this.timer = setInterval(() => this.scan(), 1000);
+      this.scan();
+    }
+    read(row) {
+      const body = row.querySelector(".webcast-chatroom___content-with-emoji-text,[data-e2e='chat-message-text']");
+      const raw = (row.textContent || "").trim();
+      const plainText = body ? body.textContent : raw.replace(/^[^：:\n]{1,60}[：:]\s*/, "");
+      const hasBody = !!body || /[：:]/.test(raw);
+      const isEnter = /^(?:enter|member|WebcastMemberMessage)$/i.test(row.getAttribute("data-message-type") || "") || (!hasBody && /(?:来了[!！。]?|进入(?:了)?直播间[!！。]?)$/.test(raw));
+      return { plainText, isEnter, identity: `${row.getAttribute("data-message-id") || row.getAttribute("data-id") || ""}\0${raw}\0${isEnter}` };
+    }
+    apply(row) {
+      const message = this.read(row);
+      if (this.handled.get(row) === message.identity) return;
+      this.handled.set(row, message.identity);
+      row.classList.toggle(CONTENT_HIDDEN_CLASS, this.enabled() && !this.filter.accept(message));
+    }
+    scan() {
+      const chat = document.getElementById("chatroom");
+      if (chat === this.target) return;
+      this.observer?.disconnect();
+      this.target = chat;
+      if (!chat) return;
+      this.handled = new WeakMap();
+      this.filter.reset();
+      for (const row of chat.querySelectorAll(CHAT_CONTENT_ROWS)) this.apply(row);
+      this.observer?.observe(chat, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ["data-message-id", "data-id", "data-message-type"] });
+    }
+    rescan() {
+      this.handled = new WeakMap();
+      this.filter.reset();
+      for (const row of this.target?.querySelectorAll(CHAT_CONTENT_ROWS) ?? []) this.apply(row);
+    }
+    restore() {
+      for (const row of document.querySelectorAll(`.${CONTENT_HIDDEN_CLASS}`)) row.classList.remove(CONTENT_HIDDEN_CLASS);
+    }
+    dispose() {
+      clearInterval(this.timer); this.timer = 0;
+      cancelAnimationFrame(this.frame); this.frame = 0;
+      this.observer?.disconnect(); this.observer = null;
+      this.pending.clear(); this.target = null;
+      this.restore(); this.style?.remove(); this.style = null;
+      this.handled = new WeakMap(); this.filter.reset();
+    }
+  };
+
+  // Scoped CSS is reversible and also covers nodes mounted after activation.
+  var SIMPLE_ROOM_CSS = `[data-e2e="exhibition-banner"],[data-e2e="yellowCart-container"],[data-e2e="hour-rank-entrance"],.douyin-player [data-e2e*="cart" i],#GiftTrayLayout,#GiftEffectLayout,.GiftTrayPlugin,.GiftEffectPlugin{display:none!important}`;
+  var SimpleRoomMode = class {
+    style = null;
+    configure(enabled) {
+      if (!enabled) { this.style?.remove(); this.style = null; return; }
+      if (this.style?.isConnected) return;
+      this.style = document.createElement("style");
+      this.style.id = "douyin-ex-simple-mode";
+      this.style.textContent = SIMPLE_ROOM_CSS;
+      (document.head ?? document.documentElement).append(this.style);
+    }
+    dispose() { this.configure(false); }
+  };
+
+  // DOM selectors adapted from Almighty-ap/DouyinEX (see bundled MIT notice).
+  var LOTTERY_SELECTORS = {
+    entry: '#ShortTouchLayout .dVxrjT_h,#ShortTouchLayout .LMUtLyr9,.ShortTouchContainer [aria-label*="福袋"],[aria-label="福袋"],img[alt="福袋"]',
+    dialog: '#short_touch_land_lottery_land_userMain,[data-short-touch-landing="short_touch_land_lottery_land_userMain"],#lottery_close_cotainer',
+    result: '#short_touch_land_lottery_land_result,[data-short-touch-landing="short_touch_land_lottery_land_result"],.lotteryDialog',
+    condition: '.aMOCkQGL,[class*="aMOCkQGL"],.oojA302O,[data-lottery-condition]',
+    status: '.q6Dj7eFU,[class*="q6Dj7eFU"],[data-condition-status]',
+    button: '.QOARtY3v,[role="button"],button',
+    timer: '.ycjwPFJI,.VWPnhGkt,.qR53KhLu,[data-lottery-countdown]'
+  };
+  function lotteryVisible(node) {
+    if (!node?.isConnected) return false;
+    const style = getComputedStyle(node);
+    if (style.display === "none" || style.visibility === "hidden" || style.opacity === "0") return false;
+    const rect = node.getBoundingClientRect();
+    return rect.width > 0 && rect.height > 0;
+  }
+  function lotteryQuery(selector, root = document) {
+    return [...(root?.querySelectorAll(selector) || [])].find(lotteryVisible) || null;
+  }
+  function lotteryClick(node) {
+    if (!lotteryVisible(node) || node.disabled || node.getAttribute("aria-disabled") === "true") return false;
+    for (const type of ["pointerdown", "mousedown", "pointerup", "mouseup"]) {
+      try { node.dispatchEvent(new (type.startsWith("pointer") ? PointerEvent : MouseEvent)(type, { bubbles: true, cancelable: true, view: window })); } catch {}
+    }
+    node.click();
+    return true;
+  }
+  var LotteryPage = class {
+    dialog() { return lotteryQuery(LOTTERY_SELECTORS.dialog); }
+    entry() { return lotteryQuery(LOTTERY_SELECTORS.entry); }
+    countdown(root) {
+      const timer = lotteryQuery(LOTTERY_SELECTORS.timer, root);
+      return parseCountdownSeconds(timer?.textContent || root?.textContent);
+    }
+    read(dialog, allowFollow) {
+      const conditions = [], seen = new Set();
+      for (const row of dialog.querySelectorAll(LOTTERY_SELECTORS.condition)) {
+        if (!lotteryVisible(row)) continue;
+        // A sibling status only belongs to this condition when its container has
+        // exactly one requirement. Never borrow another condition's completed state.
+        const parent = row.parentElement;
+        const statusNode = row.querySelector(LOTTERY_SELECTORS.status) || (parent?.querySelectorAll(LOTTERY_SELECTORS.condition).length === 1 ? parent.querySelector(LOTTERY_SELECTORS.status) : null);
+        const status = statusNode?.textContent.trim() || row.textContent.match(/未达成|已达成|未完成|已完成/)?.[0] || "";
+        const requirement = row.textContent.replace(status, "").trim();
+        const key = requirement + "|" + status;
+        if (requirement && !seen.has(key)) { seen.add(key); conditions.push({ requirement, status }); }
+      }
+      if (!conditions.length) conditions.push(...parseConditionsFromText(dialog.innerText || dialog.textContent));
+      const buttons = [...dialog.querySelectorAll(LOTTERY_SELECTORS.button)].filter(lotteryVisible);
+      const button = buttons.find((node) => node.classList.contains("QOARtY3v")) || buttons.find((node) => /^(已参与|已成功参与|等待开奖)$/.test(node.textContent.trim()) || isCommentJoinButtonText(node.textContent) || isDirectJoinButtonText(node.textContent) || isFollowButtonText(node.textContent) || isPaidButtonText(node.textContent));
+      const joined = [...dialog.querySelectorAll(".UU67CvI1,button,span,div")].some((node) => lotteryVisible(node) && /^(已参与|已成功参与|等待开奖|参与成功)$/.test(node.textContent.trim()));
+      if (!conditions.length && /参与条件/.test(dialog.textContent) && !/手动参与|无门槛|无需条件/.test(dialog.textContent)) conditions.push({ requirement: "尚未识别完整参与条件", status: "未达成" });
+      const remainingSeconds = this.countdown(dialog);
+      return { button, buttons, remainingSeconds, decision: evaluateLotteryEligibility({ conditions, alreadyJoined: joined, buttonText: button?.textContent || "", allowFollow, remainingSeconds }) };
+    }
+    close(dialog) {
+      const close = lotteryQuery('.hJ3SHYaQ,[aria-label="关闭"],[data-lottery-close]', dialog) || [...dialog.querySelectorAll("button,[role=button]")].find((node) => lotteryVisible(node) && /^(关闭|×|✕|知道了)$/.test(node.textContent.trim()));
+      return close ? lotteryClick(close) : false;
+    }
+    result() {
+      const dialog = lotteryQuery(LOTTERY_SELECTORS.result);
+      return dialog ? { dialog, parsed: parseLotteryResultText(dialog.innerText || dialog.textContent) } : null;
+    }
+  };
+  var FreeLottery = class {
+    constructor(onStatus = () => {}, page = new LotteryPage()) { this.onStatus = onStatus; this.page = page; }
+    signature = "";
+    roomId = "";
+    enabled = false;
+    allowFollow = false;
+    timer = 0;
+    abort = new AbortController();
+    busy = false;
+    cooldownUntil = 0;
+    configure(values = {}, roomId = "") {
+      const signature = JSON.stringify([!!values.autoLottery, !!values.autoLotteryFollow, roomId]);
+      if (this.signature === signature) return;
+      this.stop(); this.signature = signature;
+      this.roomId = roomId; this.enabled = !!values.autoLottery; this.allowFollow = !!values.autoLotteryFollow;
+      this.onStatus(this.enabled ? "免费福袋：等待本直播间福袋" : "免费福袋：未开启");
+      if (this.enabled && roomId) this.schedule(300);
+    }
+    valid(signal) {
+      const urlRoom = /^\/(\d+)/.exec(location.pathname)?.[1];
+      return !signal.aborted && this.enabled && !document.hidden && urlRoom === this.roomId;
+    }
+    schedule(delay = 3000) {
+      clearTimeout(this.timer);
+      this.timer = setTimeout(() => { this.timer = 0; void this.tick(); }, delay);
+    }
+    async tick() {
+      const signal = this.abort.signal;
+      if (this.busy || signal.aborted || !this.enabled) return;
+      this.busy = true;
+      let ownedDialog = null;
+      try {
+        if (!this.valid(signal)) return;
+        const result = this.page.result();
+        if (result) {
+          if (result.parsed?.status === "won") this.onStatus("福袋中奖：请查看领奖弹窗");
+          else if (result.parsed?.status === "lost") { this.page.close(result.dialog); this.onStatus("本轮未中奖，等待下一轮福袋"); }
+          return;
+        }
+        if (Date.now() < this.cooldownUntil) return;
+        let dialog = this.page.dialog();
+        let seconds = dialog ? this.page.countdown(dialog) : null;
+        if (!dialog) {
+          const entry = this.page.entry();
+          if (!entry) return;
+          seconds = this.page.countdown(entry) ?? this.page.countdown(entry.parentElement);
+          if (seconds === null || !this.valid(signal) || !lotteryClick(entry)) return;
+          dialog = await waitFor(() => this.page.dialog(), 3500, 150, signal);
+          if (!this.valid(signal) || !dialog) return;
+          ownedDialog = dialog;
+          if (!await sleep(250, signal) || !this.valid(signal)) return;
+        }
+        let followed = false;
+        for (let step = 0; step < 2 && this.valid(signal); step++) {
+          // Always re-read after an asynchronous boundary or following the host.
+          dialog = this.page.dialog();
+          if (!dialog) { this.onStatus("福袋弹窗已变化，等待下一轮检查"); return; }
+          const state = this.page.read(dialog, this.allowFollow);
+          seconds = state.remainingSeconds ?? seconds;
+          const decision = state.decision;
+          if (decision.action === "follow_then_join" && followed) { this.onStatus("免费福袋：已点击关注，等待状态更新"); return; }
+          if (decision.action === "wait_watch") {
+            this.cooldownUntil = Date.now() + decision.retryDelaySec * 1000;
+            this.onStatus("免费福袋：等待看播时长达标"); return;
+          }
+          this.cooldownUntil = Date.now() + ((seconds ?? 60) + 2) * 1000;
+          if (decision.action === "skip" || decision.action === "already_joined") { this.onStatus(`免费福袋：${decision.reason}`); return; }
+          const predicate = decision.action === "follow_then_join" ? isFollowButtonText : decision.action === "join_comment" ? isCommentJoinButtonText : isDirectJoinButtonText;
+          const button = state.buttons.find((node) => predicate(node.textContent));
+          if (!button || isPaidButtonText(button.textContent) || !this.valid(signal) || !lotteryClick(button)) {
+            this.cooldownUntil = Date.now() + 10000;
+            this.onStatus("免费福袋：等待可用的免费参与按钮"); return;
+          }
+          if (decision.action === "follow_then_join") followed = true;
+          if (!await sleep(650, signal) || !this.valid(signal)) return;
+          if (decision.action === "follow_then_join") continue;
+          const after = this.page.dialog();
+          const confirmed = after && this.page.read(after, this.allowFollow).decision.action === "already_joined";
+          this.onStatus(confirmed ? "免费福袋：已确认参与，等待开奖" : "免费福袋：已点击参与，尚未确认结果");
+          return;
+        }
+      } catch {
+        if (!signal.aborted) { this.cooldownUntil = Date.now() + 10000; this.onStatus("免费福袋：页面暂不可用，稍后重试"); }
+      } finally {
+        if (!signal.aborted) {
+          if (ownedDialog && this.valid(signal) && ownedDialog === this.page.dialog()) this.page.close(ownedDialog);
+          this.busy = false;
+          if (this.enabled) this.schedule();
+        }
+      }
+    }
+    stop() {
+      this.abort.abort(); this.abort = new AbortController();
+      clearTimeout(this.timer); this.timer = 0; this.busy = false; this.cooldownUntil = 0;
+    }
+    dispose() { this.stop(); this.enabled = false; this.signature = ""; }
+  };
+  var RoomEnhancements = class {
+    constructor(onStatus = () => {}) { this.lottery = new FreeLottery(onStatus); }
+    content = new ChatContentFilter();
+    simple = new SimpleRoomMode();
+    roomId = "";
+    values = {};
+    configure(values, roomId = this.roomId) {
+      this.values = values; this.roomId = roomId;
+      this.content.configure(values, roomId);
+      this.simple.configure(!!values.simpleMode);
+      this.lottery.configure(values, roomId);
+    }
+    attach(roomId) { if (roomId !== this.roomId) this.configure(this.values, roomId); }
+    start(values, roomId) { this.configure(values, roomId); this.content.start(); }
+    dispose() { this.content.dispose(); this.simple.dispose(); this.lottery.dispose(); }
+  };
+
   // src/ui/overlay.ts
   var MENU_WIDTH = 232;
   var CSS = `
@@ -229,9 +801,13 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
 .actions button:disabled{opacity:.45}
 .actions button:focus-visible{outline:2px solid #ff8a35;outline-offset:2px}
 .reply-icon{width:18px;height:18px;flex:none;pointer-events:none}.highlight{position:absolute;border:0;border-radius:2px;background:#00000012;pointer-events:none}
-.panel{position:fixed;left:0;top:0;z-index:2147483000;width:280px;max-width:calc(100vw - 24px);pointer-events:auto;background:#171a20;border:1px solid #525a66;border-radius:10px;padding:14px;box-shadow:0 5px 20px #0005}
+.panel{position:fixed;left:0;top:0;z-index:2147483000;width:300px;max-width:calc(100vw - 24px);max-height:calc(100vh - 24px);overflow:auto;box-sizing:border-box;pointer-events:auto;background:#171a20;border:1px solid #525a66;border-radius:10px;padding:14px;box-shadow:0 5px 20px #0005}
 .panel strong{font-size:14px}.panel p{color:#c0c7d0;margin:8px 0;overflow-wrap:anywhere}.panel small{color:#9ca6b4;display:block;margin:10px 0}
 .options{display:flex;flex-direction:column;gap:7px;margin:10px 0}
+.options .keyword-group{display:flex;flex-direction:column;align-items:stretch;gap:6px}
+.keyword-rules{display:block;width:100%;box-sizing:border-box;min-height:64px;max-height:150px;resize:vertical;background:#101318;color:#eee;border:1px solid #657080;border-radius:5px;padding:7px;font:12px/1.5 sans-serif}
+.lottery-status{font-size:12px;color:#b8dfce;line-height:1.5;overflow-wrap:anywhere}
+.options input{accent-color:#6bcebd}
 .options label{display:flex;align-items:center;gap:8px;color:#c0c7d0;cursor:pointer}
 .options input{width:15px;height:15px;margin:0;accent-color:#ff8a35}
 .fab{position:fixed;left:0;top:0;z-index:2147483000;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border:1px solid #ffffff30;border-radius:13px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;line-height:1;pointer-events:auto;white-space:nowrap;backdrop-filter:blur(4px)}
@@ -273,13 +849,14 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     }
     return icon;
   }
+  var PANEL_THEME = ".panel{width:296px;padding:18px;border:1px solid #ffffff18;border-radius:16px;background:rgba(20,24,31,.97);box-shadow:0 18px 55px #0007;color:#e7ebf0;scrollbar-width:thin;scrollbar-color:#454d59 transparent;backdrop-filter:blur(16px)}\n.panel strong{display:block;font-size:16px;letter-spacing:.5px;color:#f5f7fa;font-weight:650}\n.panel>p:not(.lottery-status){font-size:11px;color:#8e99a8;margin:4px 0 13px}\n.panel .options{gap:0;margin:0}\n.panel .options label{min-height:39px;gap:10px;color:#dbe1e9;font-size:13px;transition:color .15s}\n.panel .options label:hover{color:#fff}\n.panel .options label+label{border-top:1px solid #ffffff08}\n.panel .options input[type=checkbox]{appearance:none;-webkit-appearance:none;position:relative;flex:none;width:30px;height:18px;margin:0 0 0 auto;order:2;border:1px solid #ffffff15;border-radius:20px;background:#38414e;cursor:pointer;transition:background .15s}\n.panel .options input[type=checkbox]::after{content:\"\";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#bdc5ce;transition:transform .15s,background .15s}\n.panel .options input[type=checkbox]:checked{background:#69cbb4;border-color:#69cbb4}\n.panel .options input[type=checkbox]:checked::after{transform:translateX(12px);background:#102b25}\n.panel .options input:disabled{opacity:.35;cursor:default}\n.panel input:focus-visible,.panel textarea:focus-visible,.panel summary:focus-visible,.panel button:focus-visible{outline:2px solid #88dcc7;outline-offset:3px}\n.panel .keyword-group{display:flex;flex-direction:column;gap:8px;margin:9px 0 12px;padding:12px;background:#ffffff05;border:1px solid #ffffff0c;border-radius:10px}\n.panel .keyword-group label{color:#8e99a8;font-size:11px}\n.panel .keyword-rules{min-height:68px;max-height:130px;border-color:#ffffff1b;background:#0e1219;padding:8px;border-radius:7px;font-size:12px}\n.panel .keyword-group button{align-self:flex-end;padding:4px 10px;font-size:11px;background:#293f3a;color:#a9e3d4;border-color:#69cbb430}\n.panel .lottery-status{font-size:11px;color:#9ccdbf;margin:9px 0 13px;padding:8px 10px;background:#69cbb40a;border-radius:7px;line-height:1.6}\n.panel .advanced{border-top:1px solid #ffffff10;margin-top:12px;padding-top:9px}\n.panel .advanced summary{font-size:12px;color:#939fad;cursor:pointer;list-style:none;padding:5px 0;display:flex;align-items:center;justify-content:space-between}\n.panel .advanced summary::-webkit-details-marker{display:none}\n.panel .advanced summary::after{content:\"＋\";font-size:14px;color:#657181}\n.panel .advanced[open] summary::after{content:\"−\"}\n.panel .advanced .options label{font-size:12px;min-height:35px}\n.panel .advanced p,.panel .advanced small{font-size:11px;color:#7e8b9b;line-height:1.6}\n.panel footer{margin-top:12px;gap:8px}\n.panel footer button{border-radius:8px;font-size:12px;padding:7px 12px;background:#ffffff06;border-color:#ffffff12}\n.panel footer button:first-child{flex:1;background:#293d38;border-color:#69cbb426;color:#b6eadc}\n.panel footer button:hover{background:#ffffff12}\n.fab{border-color:#ffffff20;border-radius:9px;background:#151a22e8;color:#dce4ec}\n.fab:hover,.fab[aria-expanded=true]{color:#abe4d5;border-color:#69cbb45c;background:#1c2928f2}\n@media(prefers-reduced-motion:reduce){.panel .options label,.panel input,.panel input::after{transition:none!important}}\n";
   var OverlayUI = class {
     constructor(player) {
       this.player = player;
       this.host.id = "douyin-ex-overlay";
       this.shadow = this.host.attachShadow({ mode: "open" });
       const style = element("style");
-      style.textContent = CSS;
+      style.textContent = CSS + PANEL_THEME;
       this.menu.setAttribute("role", "group");
       this.menu.setAttribute("aria-label", "\u5F39\u5E55\u64CD\u4F5C");
       this.toast.setAttribute("role", "status");
@@ -297,7 +874,27 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         label.append(input, document.createTextNode(text));
         preferences.append(label);
       }
-      this.panel.append(element("strong", "", "\u5F39\u5E55\u589E\u5F3A"), this.status, preferences, this.metrics, this.hint);
+      this.featureInputs = {};
+      const primary = element("div", "options primary-options");
+      this.advanced.append(element("summary", "", "更多设置"), preferences, this.metrics, this.hint);
+      for (const [key, title] of [["simpleMode", "简洁模式"], ["hideEnter", "屏蔽进场消息"], ["hideRepeat", "过滤重复弹幕"], ["filterKeywords", "自定义屏蔽词"], ["autoLottery", "自动免费福袋"], ["autoLotteryFollow", "允许福袋自动关注"]]) {
+        const input = element("input"), label = element("label");
+        input.type = "checkbox"; input.dataset.preference = key;
+        label.append(input, document.createTextNode(title));
+        (key === "autoLotteryFollow" ? preferences : primary).append(label); this.featureInputs[key] = input;
+        if (key === "hideRepeat") label.title = "相同正文在 10 秒内只显示一次";
+        if (key === "autoLottery") label.title = "包含官方一键评论参与；跳过未满足的付费条件，中奖弹窗保留";
+      }
+      const keywordLabel = element("label", "", "每行一个词，包含即屏蔽");
+      keywordLabel.htmlFor = "douyin-ex-keywords";
+      this.keywordInput.id = "douyin-ex-keywords";
+      this.keywordInput.className = "keyword-rules";
+      this.keywordInput.maxLength = 4000;
+      this.keywordInput.setAttribute("aria-label", "屏蔽关键词，每行一条");
+      this.keywordInput.placeholder = "每行一条，最多 100 条 / 4000 字符";
+      this.saveKeywords.type = "button";
+      this.keywordGroup.append(keywordLabel, this.keywordInput, this.saveKeywords);
+      this.panel.append(element("strong", "", "直播工具"), this.status, primary, this.keywordGroup, this.lotteryStatus, this.advanced);
       const footer = element("footer"), close = element("button", "", "\u6536\u8D77");
       close.type = "button";
       footer.append(this.toggleAction, close);
@@ -308,7 +905,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.fab.append(this.fabDot, this.fabLabel);
       this.shadow.append(style, this.canvas, this.highlight, this.menu, this.toast);
       const floatingStyle = element("style");
-      floatingStyle.textContent = CSS;
+      floatingStyle.textContent = CSS + PANEL_THEME;
       this.floatHost.id = "douyin-ex-floating";
       this.floatHost.style.cssText = "position:fixed;inset:0;pointer-events:none;z-index:2147483000";
       this.floatShadow = this.floatHost.attachShadow({ mode: "open" });
@@ -335,6 +932,12 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.shieldGift.addEventListener("change", () => this.onPreferenceChange("shieldGift", this.shieldGift.checked), { signal });
       this.hideGiftInput.addEventListener("change", () => this.onPreferenceChange("hideGiftDanmaku", this.hideGiftInput.checked), { signal });
       this.pkInput.addEventListener("change", () => this.onPreferenceChange("pkNumbers", this.pkInput.checked), { signal });
+      for (const [key, input] of Object.entries(this.featureInputs)) input.addEventListener("change", () => this.onPreferenceChange(key, input.checked), { signal });
+      this.advanced.addEventListener("toggle", () => this.positionFloating(), { signal });
+      this.saveKeywords.addEventListener("click", () => {
+        this.onPreferenceChange("blockedKeywords", this.keywordInput.value);
+        this.message("关键词已保存；开启关键词过滤后生效");
+      }, { signal });
       for (const [button, action] of [[this.plus, "plus"], [this.reply, "reply"]]) {
         button.addEventListener("click", (event) => {
           event.stopPropagation();
@@ -382,6 +985,14 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     shieldGift = element("input");
     hideGiftInput = element("input");
     pkInput = element("input");
+    featureInputs = {};
+    advanced = element("details", "advanced");
+    keywordGroup = element("div", "keyword-group");
+    keywordInput = element("textarea");
+    savedKeywords;
+    saveKeywords = element("button", "", "保存关键词");
+    lotteryStatus = element("p", "lottery-status", "免费福袋：未开启");
+    setLotteryStatus(text) { this.lotteryStatus.textContent = text; this.positionFloating(); }
     onPreferenceChange = () => {
     };
     plus = element("button", "plus", "+1");
@@ -474,6 +1085,13 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.shieldGift.checked = values?.shieldGift !== false;
       this.hideGiftInput.checked = values?.hideGiftDanmaku !== false;
       this.pkInput.checked = values?.pkNumbers !== false;
+      for (const [key, input] of Object.entries(this.featureInputs)) input.checked = !!values?.[key];
+      this.featureInputs.autoLotteryFollow.disabled = !values?.autoLottery;
+      this.keywordGroup.hidden = !values?.filterKeywords;
+      this.lotteryStatus.hidden = !values?.autoLottery;
+      const keywords = values?.blockedKeywords || "";
+      if (this.savedKeywords !== keywords) { this.keywordInput.value = keywords; this.savedKeywords = keywords; }
+      this.positionFloating();
     }
     setBounds(left, top, width, height) {
       Object.assign(this.host.style, { inset: "auto", left: `${left}px`, top: `${top}px`, width: `${width}px`, height: `${height}px` });
@@ -604,6 +1222,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     actionBusy = false;
     audienceOff = null;
     roomPreferences = null;
+    messageFilter = new MessageFilter();
     layout = { left: 0, top: 0, width: 1, height: 1, dpr: 1 };
     onState = () => {
     };
@@ -668,10 +1287,14 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         this.unsubscribeSettings = this.live.settings?.subscribe((settings) => {
           if (this.engine === engine && this.generation === generation) engine.configure(settings);
         }) ?? null;
+        this.messageFilter.reset();
         this.unsubscribe = this.live.subscribe((messages) => {
           try {
-            const hideGift = this.roomPreferences?.read?.().hideGiftDanmaku !== false;
-            engine.enqueue(hideGift ? messages.filter((message) => !message.isGift) : messages);
+            if (generation !== this.generation || this.dead) return;
+            const values = this.roomPreferences?.read?.() || {};
+            this.messageFilter.configure(values);
+            const now = Date.now();
+            engine.enqueue(messages.filter((message) => (values.hideGiftDanmaku === false || !message.isGift) && this.messageFilter.accept(message, now)));
           } catch (error) {
             void 0 && console.warn("[douyin-ex] \u5F39\u5E55\u5165\u961F\u5931\u8D25:", error instanceof Error ? error.message : error);
           }
@@ -926,6 +1549,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       authorName: typeof user.desensitized_nickname === "string" && user.desensitized_nickname ? user.desensitized_nickname : typeof user.nickname === "string" ? user.nickname : "",
       isOwn: isCurrentUser(user, currentUser),
       isGift: structuralGift || looksLikeGiftText(plainText),
+      isEnter: /^(?:Webcast)?MemberMessage$|^enter$/i.test(String(msg.method || msg.type || msg.message_type || "")),
       plainText,
       segments,
       receivedAt: now
@@ -1625,6 +2249,9 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
   var PREF_SHIELD_GIFT = "douyin-ex:v1:shield-gift";
   var PREF_HIDE_GIFT_DANMAKU = "douyin-ex:v1:hide-gift-danmaku";
   var PREF_PK_NUMBERS = "douyin-ex:v1:pk-numbers";
+  var EXTRA_PREFS = { simpleMode: "simple-mode", autoLottery: "auto-lottery", autoLotteryFollow: "auto-lottery-follow", hideEnter: "hide-enter", hideRepeat: "hide-repeat", filterKeywords: "filter-keywords", blockedKeywords: "blocked-keywords" };
+  function cleanKeywordRules(value) { return String(value ?? "").slice(0, 4000).split(/\r?\n/).map((line) => line.trim()).filter(Boolean).slice(0, 100).join("\n"); }
+  function readKeywordRules() { try { return cleanKeywordRules(localStorage.getItem("douyin-ex:v1:blocked-keywords") || ""); } catch { return ""; } }
   var GIFT_TEXT = /(送出了|送出|赠送了|赠送|投喂|刷了)/;
   var GIFT_TAIL = /(?:×|x|X)\s*\d+\s*$/;
   var GIFT_NAMES = /(闪耀|灯牌|人气票|小心心|啤酒|玫瑰|嘉年华|跑车|热气球|烟花|火箭|抖音1号|大闹天宫|飞船|皇冠|钻石|花|礼盒|盲盒|魔法|城堡|派对)/;
@@ -1729,7 +2356,9 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         autoQuality: readFlag(PREF_AUTO_QUALITY, true),
         shieldGift: readFlag(PREF_SHIELD_GIFT, true),
         hideGiftDanmaku: readFlag(PREF_HIDE_GIFT_DANMAKU, true),
-        pkNumbers: readFlag(PREF_PK_NUMBERS, true)
+        pkNumbers: readFlag(PREF_PK_NUMBERS, true),
+        ...Object.fromEntries(Object.entries(EXTRA_PREFS).filter(([key]) => key !== "blockedKeywords").map(([key, name]) => [key, readFlag("douyin-ex:v1:" + name, false)])),
+        blockedKeywords: readKeywordRules()
       };
     }
     roomId = "";
@@ -1745,15 +2374,15 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       return { ...this.values };
     }
     set(key, value) {
-      if (!(key in this.values)) return this.read();
-      this.values[key] = !!value;
+      if (!Object.prototype.hasOwnProperty.call(this.values, key)) return this.read();
+      this.values[key] = key === "blockedKeywords" ? cleanKeywordRules(value) : !!value;
       const keyNames = {
         autoQuality: PREF_AUTO_QUALITY,
         shieldGift: PREF_SHIELD_GIFT,
         hideGiftDanmaku: PREF_HIDE_GIFT_DANMAKU,
         pkNumbers: PREF_PK_NUMBERS
       };
-      writeFlag(keyNames[key], this.values[key]);
+      writeFlag(keyNames[key] || "douyin-ex:v1:" + EXTRA_PREFS[key], this.values[key]);
       const affectsRoom = key === "autoQuality" || key === "shieldGift";
       if (affectsRoom) {
         this.cancelPending();
@@ -1902,9 +2531,13 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     let expired = false;
     const chatFilter = new ChatGiftFilter();
     const pkNumbers = new PkNumbers();
+    let lotteryStatus = "免费福袋：未开启";
+    const enhancements = new RoomEnhancements((text) => { lotteryStatus = text; app?.ui.setLotteryStatus(text); });
     const preferences = new RoomPreferences((values) => {
       chatFilter.setEnabled(values.hideGiftDanmaku !== false);
       pkNumbers.setEnabled(values.pkNumbers !== false);
+      enhancements.configure(values, roomIdFromUrl());
+      app?.ui.setPreferences(values);
     });
     let roomWatch = 0;
     const roomIdFromUrl = () => {
@@ -1916,6 +2549,8 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       roomWatch = setInterval(() => {
         const roomId = roomIdFromUrl();
         if (roomId && roomId !== preferences.roomId) preferences.attach(roomId);
+        else if (!roomId && preferences.roomId) preferences.detach();
+        enhancements.attach(roomId);
       }, 1e3);
     };
     const enabled = () => {
@@ -1944,11 +2579,14 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         if (!live) return false;
         app = new LifecycleController(live, new DouyinChatAdapter(), save, preferences);
         preferences.attach(live.roomId || roomIdFromUrl());
+        enhancements.attach(roomIdFromUrl());
+        app.ui.setLotteryStatus(lotteryStatus);
         app.onInvalid = () => {
           const stale = app;
           app = void 0;
           stale?.dispose();
           preferences.detach();
+          enhancements.dispose();
           stopProbe();
           begin();
         };
@@ -1972,6 +2610,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       pkNumbers.setEnabled(preferences.read().pkNumbers !== false);
       pkNumbers.start();
       preferences.attach(roomIdFromUrl());
+      enhancements.start(preferences.read(), roomIdFromUrl());
       watchRoom();
       if (probe()) return;
       observer = new MutationObserver(() => {
@@ -1988,12 +2627,13 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         void 0 && console.warn("[douyin-ex] 20 \u79D2\u5185\u672A\u627E\u5230\u53EF\u9A8C\u8BC1\u7684\u76F4\u64AD\u9002\u914D\u5165\u53E3\uFF0C\u5DF2\u4FDD\u7559\u539F\u751F\u9875\u9762\u3002\u3002");
       }, 2e4);
     };
-    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.12.06" });
+    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.12.07" });
     window.addEventListener("pagehide", () => {
       stopProbe();
       clearInterval(roomWatch);
       chatFilter.dispose();
       pkNumbers.dispose();
+      enhancements.dispose();
       preferences.detach();
       app?.dispose();
       app = void 0;
