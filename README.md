@@ -56,7 +56,7 @@
 - 修复开启弹幕增强后的「抽搐」：三条事件驱动的位置重写全部去掉——`resize()` 不再按比例重写全场 x、不再重排/丢弃轨道；`configure()` 不再 `release()` + `lane %= lanes` 折叠轨道（大面积重叠根因），只在字号/行高变化时重测宽度；悬停避让不再把同轨后方弹幕在单帧内右推几十到几百像素，改为整轨顺延停住。
 - 悬停加两道闸：指针 420ms 内没有真实移动就不新建暂停（鼠标停在画面上不再把整条轨道冻住）；单条停驻上限 12 秒（未被菜单按住时）后自动放行。
 - 绘制只清除实际用到的轨道带（含高水位），避免高 DPI 下每帧整屏 `clearRect` 的填充开销。
-- 新增 `tests/danmaku-jitter-regression.mjs`（6 项纯 Node 回归，旧版 5 项失败）；场景矩阵与 Worker 端到端数据见 `danmaku-jitter-20261116/docs/danmaku-jitter.md`。
+- 新增 `tests/danmaku-jitter-regression.mjs`（6 项纯 Node 回归，旧版 5 项失败）；场景矩阵与 Worker 端到端数据见 [docs/danmaku-jitter.md](./docs/danmaku-jitter.md)，网上反馈与界面改动见 [docs/ui-cooperation.md](./docs/ui-cooperation.md)。
 
 ### 2026.11.16.02
 
