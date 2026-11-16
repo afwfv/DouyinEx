@@ -95,7 +95,7 @@ await test('real-dom-win-dialog-is-retained',async()=>{
 await test('settings-ui-defaults-save-and-checkbox-wiring',async()=>{
   localStorage.clear();preferences=new RoomPreferences(values=>ui.setPreferences(values));ui=new OverlayUI(document.querySelector('.douyin-player'));
   ui.onPreferenceChange=(k,v)=>preferences.set(k,v);ui.setPreferences(preferences.read());ui.setState('native','本地界面验证');ui.openSettings();
-  assert(Object.values(ui.featureInputs).every(i=>!i.checked));assert(ui.featureInputs.autoLotteryFollow.disabled);
+  assert(Object.entries(ui.featureInputs).every(([key,i])=>key==='hoverPause'?i.checked:!i.checked),'only hover pause keeps its previous default');assert(ui.featureInputs.autoLotteryFollow.disabled);
   assert(!ui.advanced.open);assert(ui.keywordGroup.hidden);assert(ui.lotteryStatus.hidden);
   assert(ui.panel.querySelector('.primary-options').children.length===5);
   ui.featureInputs.hideRepeat.click();assert(preferences.read().hideRepeat);ui.featureInputs.autoLottery.click();assert(!ui.featureInputs.autoLotteryFollow.disabled);
@@ -104,6 +104,15 @@ await test('settings-ui-defaults-save-and-checkbox-wiring',async()=>{
   assert(new RoomPreferences().read().blockedKeywords==='广告\nABC');
   ui.keywordInput.value='未保存草稿';ui.featureInputs.simpleMode.click();assert(ui.keywordInput.value==='未保存草稿');ui.keywordInput.value=preferences.read().blockedKeywords;
   ui.setLotteryStatus('免费福袋：本地模拟已确认参与');
+  ui.setFollow({fontSize:20,area:0.6,travelSeconds:14.4});
+  assert(/字号 20/.test(ui.follow.textContent)&&/区域 60%/.test(ui.follow.textContent)&&/速度 14\.4s/.test(ui.follow.textContent),'follow summary: '+ui.follow.textContent);
+  ui.featureInputs.hoverPause.click();
+  assert(preferences.read().hoverPause===false,'hover pause switch did not persist');
+  ui.featureInputs.hoverPause.click();
+  assert(preferences.read().hoverPause===true,'hover pause did not restore');
+  document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}));
+  assert(ui.panel.hidden,'Escape did not collapse the panel');
+  ui.openSettings();
 });
 await test('settings-panel-stays-in-viewport-and-scrolls',async()=>{
   ui.positionFloating();const rect=ui.panel.getBoundingClientRect();
