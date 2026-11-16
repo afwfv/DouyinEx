@@ -6,12 +6,12 @@
 
 - **弹幕不掉帧**：Worker + OffscreenCanvas 重绘弹幕，与主线程解耦
 - **弹幕悬停**：悬停只暂停鼠标指到的那一条弹幕，同轨道其他弹幕继续滚动；可复读、+1、引用回复
-- **弹幕间距**：同轨相邻弹幕的间距随机（56–206px 起步），比原生更松，且不会互相压字
+- **弹幕间距**：同轨相邻弹幕的间距随机（56–206px 起步），比原生更松，且不会互相压字；贴图宽度按实际字距测量，长句的尾字不会被裁
 - **自动最高画质**：进入直播间自动切到当前可用的最高档（原画 > 蓝光 > 超清 > 高清 > 标清）
 - **屏蔽礼物特效**：调用官方「礼物设置 → 屏蔽礼物特效」
 - **屏蔽送礼弹幕**：弹幕画布与右侧聊天列表都不再出现「送出了 ×N」
 - **PK 真实分数**：把 `100万+` 之类的缩写替换成精确值，并实时跟随票数刷新
-- **悬浮设置框**：停靠在「在线观众」旁，显示真实在线人数，点击展开设置
+- **悬浮设置框**：停靠在「在线观众」旁，显示当前在线观众数（`onlineUserForAnchor` 精确值优先，缺失或过期时回落到页面官方「在线观众」文本），鼠标提示附带本场人看过；点击展开设置
 
 - **自动免费福袋**：只使用官方免费参与按钮，支持官方一键评论。自动关注单独开启；中奖弹窗保留。
 - **简洁模式**：隐藏推广横幅、购物车、小时榜及礼物特效层；保留播放器控件、聊天和福袋入口，关闭后恢复。
@@ -40,6 +40,19 @@
 悬停任意弹幕只暂停这一条（其余弹幕照常滚动），并弹出「回复 / +1 / 复制」操作。
 
 ## 更新记录
+
+### 2026.11.16.02
+
+- 修复长弹幕最后一个字被裁掉半个：Worker 里 `measure()` 每次重设 `font` 后没有恢复 `letterSpacing`，测量值比实际绘制少 `0.4px × 字数`；贴图宽度按测量值建立，长句右侧溢出右侧 7px 内边距后即被贴图边缘裁切。
+- 抽出统一的字距常量 `K = "0.4px"`，测量、构造期与 `paint()` 共用；`measure()` 在 `measureText` 之前恢复字距，测量宽度与实际绘制一致。
+- 新增 `tests/danmaku-metrics-regression.mjs`（5 项）与 `tests/browser-danmaku-tailclip.mjs`（6 条弹幕 × 3 种 DPR，无头 Edge 实测贴图右边缘）：47 字弹幕修复前裁切 12.8px（约半个字），修复后 0px，右侧余量约 5.5px。
+
+### 2026.11.16.01
+
+- 悬浮按钮的在线人数拆开口径：在线只取 `onlineUserForAnchor` 精确值，缺失或超过 45 秒未刷新时回落到页面「在线观众」按钮的官方文本；`total` / `totalUser` 这类累计观看只写入提示里的「本场人看过」，不再顶替在线数字。
+- 去掉原来 `total → total_user → online_user_for_anchor` 的三字段轮询取值（数值量级不同，是数字来回跳的直接原因），补上 int64 `Long` 对象与「10万+」「1.2亿」缩写的解析。
+- 「在线观众」按钮改为真实 MutationObserver 监听，页面重渲染换掉节点后 4 秒内自动重挂；发布节流 1 秒，数值不变不重绘，切房或关闭时解绑并清空状态。
+- 新增 11 项逻辑回归与 7 项本地 Edge DOM 检查（`tests/audience-regression.mjs`、`tests/browser-audience.mjs`），原有回归保持通过。
 
 ### 2026.11.13.08
 
@@ -92,6 +105,8 @@ node tests/preferences-regression.mjs DouyinEx.user.js
 node tests/engine-lifecycle-regression.mjs DouyinEx.user.js
 node tests/room-tools-regression.mjs DouyinEx.user.js
 node tests/danmaku-renderer-regression.mjs DouyinEx.user.js
+node tests/audience-regression.mjs DouyinEx.user.js
+node tests/danmaku-metrics-regression.mjs DouyinEx.user.js
 ```
 
 Windows + Microsoft Edge 可运行界面与 DOM 验证：
@@ -99,6 +114,8 @@ Windows + Microsoft Edge 可运行界面与 DOM 验证：
 ```sh
 node tests/browser-room-tools.mjs DouyinEx.user.js
 node tests/browser-danmaku-stability.mjs DouyinEx.user.js
+node tests/browser-audience.mjs DouyinEx.user.js
+node tests/browser-danmaku-tailclip.mjs DouyinEx.user.js
 ```
 
 浏览器测试只打开本机临时测试页，输出到 `browser-v07/`、`browser-v08/`，不访问抖音账号或参与真实福袋。页面结构变化仍需真实直播间复核。
