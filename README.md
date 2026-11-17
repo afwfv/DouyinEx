@@ -1,11 +1,12 @@
 # DouyinEx
 
-抖音网页直播间增强 Userscript：弹幕重绘、简洁模式、聊天过滤、免费福袋、看播积分、画质和 PK 分数。
+抖音网页直播间增强 Userscript：弹幕重绘、弹幕收藏与发送、简洁模式、聊天过滤、免费福袋、看播积分、画质和 PK 分数。
 
 ## 功能
 
 - **弹幕不掉帧**：Worker + OffscreenCanvas 重绘弹幕，与主线程解耦
 - **弹幕悬停**：悬停只暂停鼠标指到的那一条（同轨后方顺延停住，不跳动、不重叠），可复读、+1、引用回复；指针静止在画面上不会误冻结，单条最长停 12 秒后自动放行；可在「更多设置」里整项关闭
+- **弹幕收藏与发送**：悬停弹幕点「收藏」即可保存正文与作者；聊天输入框旁出现「收藏 N」按钮，点开选择一条直接经原生输入/发送通道发出；支持逐条删除、正文去重和本地持久化
 - **跟随原生设置**：字号、显示区域、不透明度、速度都跟随抖音原生「弹幕设置」；速度按原生 duration 换算（默认 14.4 秒/屏），面板里显示当前跟随值
 - **弹幕间距**：同轨相邻弹幕的间距随机（56–206px 起步），比原生更松，且不会互相压字；贴图宽度按实际字距测量，长句的尾字不会被裁
 - **尺寸变化不抽搐**：窗口缩放、进出全屏、改字号/区域/速度都不再重写全场位置、不重排轨道、不丢条目
@@ -41,9 +42,19 @@
 
 自动免费福袋可能触发页面上的官方一键评论。需要额外付费、加入未达成的粉丝团、分享或无法识别的条件时跳过；看播时长不足会等待复查；自动关注默认关闭。状态区区分“已点击”和“已确认参与”，中奖弹窗保留，后台隐藏页面暂停操作。
 
-悬停任意弹幕只暂停这一条并弹出「回复 / +1 / 复制」；同轨后方弹幕会顺延停在其后（不推飞、不重叠），移开鼠标或 12 秒后恢复滚动。
+悬停任意弹幕只暂停这一条并弹出「收藏 / 回复 / +1」；同轨后方弹幕会顺延停在其后（不推飞、不重叠），移开鼠标或 12 秒后恢复滚动。
+
+收藏后的弹幕保存在 `localStorage['douyin-ex:v1:danmaku-favorites']`，最多 100 条，正文相同只保留一条。聊天输入框旁显示「收藏 N」按钮，点开列表后点击条目即刻经原生输入框发送；条目右侧「×」删除。发送时会覆盖输入框为所选收藏正文并立即提交，由现有输入适配器校验输入法组合状态和内容同步。
 
 ## 更新记录
+
+### 2026.11.17.02
+
+- 新增弹幕收藏：悬停菜单加入「收藏」，可在收藏/取消收藏之间切换；正文与作者名存入 `localStorage`，正文去重、最多 100 条。
+- 聊天输入框旁新增「收藏 N」按钮和选择面板：点击条目直接经现有原生输入/发送适配器发送，逐条「×」删除；支持空状态、发送失败提示和面板关闭。
+- 收藏列表与悬停菜单状态通过同一个 store 订阅同步；在发送区删除当前悬停的收藏后，菜单态会立即更新。
+- 收藏按钮随输入框位置轮询/窗口变化重新定位，不修改抖音 React 输入区 DOM；页面卸载或直播间实例变化时移除宿主、定时器和事件监听。
+- 新增 `tests/danmaku-favorites-regression.mjs`（7 项存储与接线检查），本地 Edge 房间工具回归增至 19 项。
 
 ### 2026.11.17.01
 
@@ -131,6 +142,7 @@ node tests/preferences-regression.mjs DouyinEx.user.js
 node tests/engine-lifecycle-regression.mjs DouyinEx.user.js
 node tests/room-tools-regression.mjs DouyinEx.user.js
 node tests/point-claim-regression.mjs DouyinEx.user.js
+node tests/danmaku-favorites-regression.mjs DouyinEx.user.js
 node tests/danmaku-renderer-regression.mjs DouyinEx.user.js
 node tests/audience-regression.mjs DouyinEx.user.js
 node tests/danmaku-metrics-regression.mjs DouyinEx.user.js
