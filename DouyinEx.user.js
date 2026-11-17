@@ -2,7 +2,7 @@
 // @name         DouyinEx - 抖音直播间增强插件
 // @namespace    https://github.com/afwfv/DouyinEx
 // @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
-// @version      2026.11.17.04
+// @version      2026.11.18.01
 // @description  弹幕收藏与发送、悬停、+1、回复、最高画质、礼物屏蔽、PK真实分数、自动免费福袋、看播积分、简洁模式、进场/重复/关键词过滤、悬浮条拖动
 // @author       DD (afwfv)
 // @homepageURL  https://github.com/afwfv/DouyinEx
@@ -1672,10 +1672,10 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
 
   // src/ui/favorite-composer.ts
   var FAVORITE_COMPOSER_CSS = `
-:host{position:relative;z-index:2147483000;display:inline-flex;align-items:center;flex:none;margin:0 5px;pointer-events:auto;color:#e7ebf0;font:12px/1.5 "Microsoft YaHei",sans-serif}
+:host{position:fixed;inset:0;z-index:2147483647;display:block;pointer-events:none;color:#e7ebf0;font:12px/1.5 "Microsoft YaHei",sans-serif}
 [hidden]{display:none!important}
 button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,24,31,.96);cursor:pointer}
-.trigger{height:var(--fav-height,30px);max-width:96px;padding:0 8px;border:0;border-radius:6px;background:transparent;color:#aeb6c2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color .15s,background .15s}
+.trigger{position:fixed;height:var(--fav-height,30px);padding:0 8px;border:0;border-radius:6px;background:transparent;color:#aeb6c2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:auto;transition:color .15s,background .15s}
 .trigger:hover,.trigger[aria-expanded=true]{color:#fff;background:#ffffff12}
 .trigger[aria-expanded=true]{color:#69cbb4}
 .trigger[data-count="0"]{color:#858e9b}
@@ -1704,12 +1704,15 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
       const style = element("style");
       style.textContent = FAVORITE_COMPOSER_CSS;
       this.popupHost.id = "douyin-ex-favorites-panel";
-      this.popupHost.style.cssText = "position:fixed;inset:0;display:block;pointer-events:none;z-index:2147483000";
+      this.popupHost.style.cssText = "position:fixed;inset:0;display:block;pointer-events:none;z-index:2147483647";
       this.popupShadow = this.popupHost.attachShadow({ mode: "open" });
       const popupStyle = element("style");
       popupStyle.textContent = FAVORITE_COMPOSER_CSS;
+      this.spacer.id = "douyin-ex-favorites-spacer";
+      this.spacer.style.cssText = "display:inline-block;flex:none;visibility:hidden;pointer-events:none;margin:0 4px;width:58px;height:30px";
       this.trigger.type = "button";
       this.trigger.dataset.e2e = "danmaku-favorites";
+      this.trigger.style.visibility = "hidden";
       this.trigger.setAttribute("aria-expanded", "false");
       this.trigger.title = "\u6536\u85CF\u5F39\u5E55\uFF0C\u70B9\u51FB\u9009\u62E9\u53D1\u9001";
       this.panel.hidden = true;
@@ -1752,6 +1755,7 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
     shadow;
     popupHost = element("div");
     popupShadow;
+    spacer = element("span");
     trigger = element("button", "trigger", "\u6536\u85CF");
     panel = element("section", "panel");
     list = element("div", "list");
@@ -1796,14 +1800,14 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
       const candidates = [...scope.querySelectorAll('.webcast-chatroom___send-btn,[data-e2e*="send"],[aria-label="\u53D1\u9001"],button')];
       return candidates.find((node) => (node.matches('.webcast-chatroom___send-btn,[data-e2e*="send"],[aria-label="\u53D1\u9001"]') || node.textContent?.trim() === "\u53D1\u9001") && this.visible(node)) || null;
     }
-    ensureInline(input) {
+    ensureSpacer(input) {
       const scope = input.closest('#chatroom,[data-e2e="live-chatting"]') || input.parentElement;
       if (!scope) return null;
       const send = this.sendButton(scope);
       const parent = send?.parentElement || input.parentElement;
       const anchor = send || input.nextSibling || null;
       if (!parent) return null;
-      if (this.host.parentElement !== parent || (anchor ? this.host.nextSibling !== anchor : this.host.nextElementSibling !== null)) parent.insertBefore(this.host, anchor);
+      if (this.spacer.parentElement !== parent || (anchor ? this.spacer.nextSibling !== anchor : this.spacer.nextElementSibling !== null)) parent.insertBefore(this.spacer, anchor);
       if (this.observedParent !== parent) {
         this.parentObserver?.disconnect();
         this.observedParent = parent;
@@ -1811,34 +1815,45 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
         this.parentObserver.observe(parent, { childList: true });
       }
       const nativeHeight = send?.getBoundingClientRect().height || input.getBoundingClientRect().height || 30;
-      this.host.style.setProperty("--fav-height", `${Math.max(24, Math.min(36, Math.round(nativeHeight)))}px`);
-      this.host.style.display = "inline-flex";
-      return { input, send, parent };
+      const height = Math.max(24, Math.min(36, Math.round(nativeHeight)));
+      this.host.style.setProperty("--fav-height", `${height}px`);
+      this.spacer.style.height = `${height}px`;
+      const width = Math.max(44, Math.round(this.trigger.offsetWidth || 58));
+      this.spacer.style.width = `${width}px`;
+      const rect = this.spacer.getBoundingClientRect();
+      this.trigger.style.left = `${Math.round(rect.left)}px`;
+      this.trigger.style.top = `${Math.round(rect.top + (rect.height - height) / 2)}px`;
+      this.trigger.style.visibility = "visible";
+      return { input, send, parent, rect };
     }
     position() {
       const input = this.input();
       if (!input || !input.isConnected) {
         this.host.style.display = "none";
+        this.spacer.remove();
         this.close();
         return;
       }
       const rect = input.getBoundingClientRect();
       if (rect.width <= 0 || rect.height <= 0) {
         this.host.style.display = "none";
+        this.spacer.remove();
         this.close();
         return;
       }
-      if (!this.ensureInline(input)) {
+      this.host.style.display = "block";
+      if (!this.ensureSpacer(input)) {
         this.host.style.display = "none";
+        this.spacer.remove();
         this.close();
         return;
       }
       if (this.panel.hidden) return;
-      const hostRect = this.host.getBoundingClientRect();
+      const triggerRect = this.trigger.getBoundingClientRect();
       const panelWidth = Math.min(320, innerWidth - 16), panelHeight = this.panel.offsetHeight || 280;
-      const panelX = Math.max(8, Math.min(innerWidth - panelWidth - 8, hostRect.right - panelWidth));
-      let panelY = hostRect.top - panelHeight - 8;
-      if (panelY < 8) panelY = Math.min(innerHeight - panelHeight - 8, hostRect.bottom + 8);
+      const panelX = Math.max(8, Math.min(innerWidth - panelWidth - 8, triggerRect.right - panelWidth));
+      let panelY = triggerRect.top - panelHeight - 8;
+      if (panelY < 8) panelY = Math.min(innerHeight - panelHeight - 8, triggerRect.bottom + 8);
       this.panel.style.left = `${Math.round(panelX)}px`;
       this.panel.style.top = `${Math.max(8, Math.round(panelY))}px`;
     }
@@ -1860,6 +1875,7 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
       this.list.replaceChildren();
       if (!entries.length) {
         this.list.append(element("p", "empty", "\u8FD8\u6CA1\u6709\u6536\u85CF\u5F39\u5E55\uFF1B\u60AC\u505C\u4EFB\u610F\u5F39\u5E55\u540E\u70B9\u201C\u6536\u85CF\u201D\u3002"));
+        this.queuePosition();
         return;
       }
       for (const entry of entries) {
@@ -1882,6 +1898,7 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
         row.append(send, remove);
         this.list.append(row);
       }
+      this.queuePosition();
     }
     async send(entry) {
       if (this.busy) return;
@@ -1910,6 +1927,7 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
       this.parentObserver = null;
       this.observedParent = null;
       this.abort.abort();
+      this.spacer.remove();
       this.host.remove();
       this.popupHost.remove();
     }
@@ -3684,7 +3702,7 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
         void 0 && console.warn("[douyin-ex] 20 \u79D2\u5185\u672A\u627E\u5230\u53EF\u9A8C\u8BC1\u7684\u76F4\u64AD\u9002\u914D\u5165\u53E3\uFF0C\u5DF2\u4FDD\u7559\u539F\u751F\u9875\u9762\u3002\u3002");
       }, 2e4);
     };
-    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.17.04" });
+    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.18.01" });
     window.addEventListener("pagehide", () => {
       stopProbe();
       clearInterval(roomWatch);
