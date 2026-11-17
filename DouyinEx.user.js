@@ -2,7 +2,7 @@
 // @name         DouyinEx - 抖音直播间增强插件
 // @namespace    https://github.com/afwfv/DouyinEx
 // @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
-// @version      2026.11.17.02
+// @version      2026.11.17.03
 // @description  弹幕收藏与发送、悬停、+1、回复、最高画质、礼物屏蔽、PK真实分数、自动免费福袋、看播积分、简洁模式、进场/重复/关键词过滤、悬浮条拖动
 // @author       DD (afwfv)
 // @homepageURL  https://github.com/afwfv/DouyinEx
@@ -984,19 +984,22 @@ function parseLotteryResultText(text) {
 
   // src/features/danmaku-favorites.ts
   var FAVORITES_KEY = "douyin-ex:v1:danmaku-favorites";
+  var FAVORITES_PREFIX = "douyin-ex:v1:danmaku-favorites:";
   function favoriteText(value) {
     return String(value ?? "").trim().slice(0, 500);
   }
   var DanmakuFavorites = class {
-    constructor(storage = null, limit = 100) {
+    constructor(storage = null, limit = 100, roomId = "") {
       this.storage = storage;
       this.limit = limit;
+      this.roomId = this.room(roomId);
       this.entries = [];
       this.listeners = /* @__PURE__ */ new Set();
       this.load();
     }
     storage = null;
     limit = 100;
+    roomId = "";
     entries = [];
     listeners = /* @__PURE__ */ new Set();
     area() {
@@ -1007,12 +1010,24 @@ function parseLotteryResultText(text) {
         return null;
       }
     }
-    load() {
-      const area = this.area();
-      if (!area) return;
+    room(value) {
+      return String(value ?? "").trim().slice(0, 64);
+    }
+    key(roomId = this.roomId) {
+      return roomId ? `${FAVORITES_PREFIX}${roomId}` : "";
+    }
+    setRoom(roomId) {
+      const next = this.room(roomId);
+      if (next === this.roomId) return false;
+      this.roomId = next;
+      this.load();
+      this.emit();
+      return true;
+    }
+    parse(raw) {
+      this.entries = [];
+      if (!raw) return;
       try {
-        const raw = area.getItem(FAVORITES_KEY);
-        if (!raw) return;
         const parsed = JSON.parse(raw);
         if (!Array.isArray(parsed)) return;
         const seen = /* @__PURE__ */ new Set();
@@ -1030,11 +1045,32 @@ function parseLotteryResultText(text) {
       } catch {
       }
     }
+    load() {
+      this.entries = [];
+      const area = this.area();
+      if (!area || !this.roomId) return;
+      const key = this.key();
+      try {
+        const raw = area.getItem(key);
+        if (raw !== null) {
+          this.parse(raw);
+          return;
+        }
+        const legacy = area.getItem(FAVORITES_KEY);
+        if (legacy === null) return;
+        this.parse(legacy);
+        if (this.entries.length) {
+          area.setItem(key, JSON.stringify(this.entries));
+          area.removeItem?.(FAVORITES_KEY);
+        }
+      } catch {
+      }
+    }
     persist() {
       const area = this.area();
-      if (!area) return;
+      if (!area || !this.roomId) return;
       try {
-        area.setItem(FAVORITES_KEY, JSON.stringify(this.entries));
+        area.setItem(this.key(), JSON.stringify(this.entries));
       } catch {
       }
     }
@@ -1052,11 +1088,11 @@ function parseLotteryResultText(text) {
     }
     has(value) {
       const text = favoriteText(value);
-      return !!text && this.entries.some((entry) => entry.text === text);
+      return !!this.roomId && !!text && this.entries.some((entry) => entry.text === text);
     }
     add(message) {
       const text = favoriteText(typeof message === "string" ? message : message?.text);
-      if (!text || this.has(text)) return false;
+      if (!this.roomId || !text || this.has(text)) return false;
       this.entries.unshift({
         text,
         authorName: typeof message?.authorName === "string" ? message.authorName.trim().slice(0, 80) : "",
@@ -1078,7 +1114,7 @@ function parseLotteryResultText(text) {
     }
     toggle(message) {
       const text = favoriteText(typeof message === "string" ? message : message?.text);
-      if (!text) return null;
+      if (!this.roomId || !text) return null;
       if (this.has(text)) {
         this.remove(text);
         return { favorited: false, changed: true };
@@ -1636,12 +1672,13 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
 
   // src/ui/favorite-composer.ts
   var FAVORITE_COMPOSER_CSS = `
-:host{position:fixed;inset:0;display:block;pointer-events:none;z-index:2147483000;color:#e7ebf0;font:12px/1.5 "Microsoft YaHei",sans-serif}
+:host{position:relative;z-index:2147483000;display:inline-flex;align-items:center;flex:none;margin:0 5px;pointer-events:auto;color:#e7ebf0;font:12px/1.5 "Microsoft YaHei",sans-serif}
 [hidden]{display:none!important}
 button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,24,31,.96);cursor:pointer}
-.trigger{position:fixed;height:26px;max-width:120px;padding:0 9px;border-radius:8px;color:#dbe1e9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:auto;box-shadow:0 4px 14px #0006;backdrop-filter:blur(6px)}
-.trigger:hover,.trigger[aria-expanded=true]{border-color:#69cbb4;color:#69cbb4}
-.trigger[data-count="0"]{color:#9ca6b4}
+.trigger{height:var(--fav-height,30px);max-width:96px;padding:0 8px;border:0;border-radius:6px;background:transparent;color:#aeb6c2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color .15s,background .15s}
+.trigger:hover,.trigger[aria-expanded=true]{color:#fff;background:#ffffff12}
+.trigger[aria-expanded=true]{color:#69cbb4}
+.trigger[data-count="0"]{color:#858e9b}
 .panel{position:fixed;width:320px;max-width:calc(100vw - 16px);max-height:min(360px,calc(100vh - 16px));overflow:auto;overscroll-behavior:contain;padding:10px;border:1px solid #ffffff1b;border-radius:12px;background:rgba(20,24,31,.98);box-shadow:0 14px 40px #0008;pointer-events:auto;backdrop-filter:blur(12px)}
 .head{position:sticky;top:-10px;z-index:1;display:flex;align-items:center;gap:8px;padding:1px 0 9px;background:rgba(20,24,31,.98)}
 .head strong{font-size:13px;color:#f2f5f8}.head small{flex:1;color:#8e99a8;font-size:11px}
@@ -1716,6 +1753,8 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
     frame = 0;
     busy = false;
     storeOff = null;
+    observedParent = null;
+    parentObserver = null;
     abort = new AbortController();
     start() {
       if (this.timer) return;
@@ -1739,6 +1778,34 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
         this.position();
       });
     }
+    visible(node) {
+      if (!node?.isConnected) return false;
+      const rect = node.getBoundingClientRect(), style = getComputedStyle(node);
+      return rect.width > 0 && rect.height > 0 && style.display !== "none" && style.visibility !== "hidden";
+    }
+    sendButton(scope) {
+      const candidates = [...scope.querySelectorAll('.webcast-chatroom___send-btn,[data-e2e*="send"],[aria-label="\u53D1\u9001"],button')];
+      return candidates.find((node) => (node.matches('.webcast-chatroom___send-btn,[data-e2e*="send"],[aria-label="\u53D1\u9001"]') || node.textContent?.trim() === "\u53D1\u9001") && this.visible(node)) || null;
+    }
+    ensureInline(input) {
+      const scope = input.closest('#chatroom,[data-e2e="live-chatting"]') || input.parentElement;
+      if (!scope) return null;
+      const send = this.sendButton(scope);
+      const parent = send?.parentElement || input.parentElement;
+      const anchor = send || input.nextSibling || null;
+      if (!parent) return null;
+      if (this.host.parentElement !== parent || (anchor ? this.host.nextSibling !== anchor : this.host.nextElementSibling !== null)) parent.insertBefore(this.host, anchor);
+      if (this.observedParent !== parent) {
+        this.parentObserver?.disconnect();
+        this.observedParent = parent;
+        this.parentObserver = new MutationObserver(() => this.queuePosition());
+        this.parentObserver.observe(parent, { childList: true });
+      }
+      const nativeHeight = send?.getBoundingClientRect().height || input.getBoundingClientRect().height || 30;
+      this.host.style.setProperty("--fav-height", `${Math.max(24, Math.min(36, Math.round(nativeHeight)))}px`);
+      this.host.style.display = "inline-flex";
+      return { input, send, parent };
+    }
     position() {
       const input = this.input();
       if (!input || !input.isConnected) {
@@ -1752,18 +1819,17 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
         this.close();
         return;
       }
-      this.host.style.display = "block";
-      const width = this.trigger.offsetWidth || 64, height = this.trigger.offsetHeight || 26;
-      const x = Math.max(8, Math.min(innerWidth - width - 8, rect.right - width));
-      let y = rect.top - height - 6;
-      if (y < 8) y = Math.min(innerHeight - height - 8, rect.bottom + 6);
-      this.trigger.style.left = `${Math.round(x)}px`;
-      this.trigger.style.top = `${Math.round(y)}px`;
+      if (!this.ensureInline(input)) {
+        this.host.style.display = "none";
+        this.close();
+        return;
+      }
       if (this.panel.hidden) return;
+      const hostRect = this.host.getBoundingClientRect();
       const panelWidth = Math.min(320, innerWidth - 16), panelHeight = this.panel.offsetHeight || 280;
-      const panelX = Math.max(8, Math.min(innerWidth - panelWidth - 8, rect.right - panelWidth));
-      let panelY = y - panelHeight - 8;
-      if (panelY < 8) panelY = Math.min(innerHeight - panelHeight - 8, y + height + 8);
+      const panelX = Math.max(8, Math.min(innerWidth - panelWidth - 8, hostRect.right - panelWidth));
+      let panelY = hostRect.top - panelHeight - 8;
+      if (panelY < 8) panelY = Math.min(innerHeight - panelHeight - 8, hostRect.bottom + 8);
       this.panel.style.left = `${Math.round(panelX)}px`;
       this.panel.style.top = `${Math.max(8, Math.round(panelY))}px`;
     }
@@ -1831,6 +1897,9 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
       this.frame = 0;
       this.storeOff?.();
       this.storeOff = null;
+      this.parentObserver?.disconnect();
+      this.parentObserver = null;
+      this.observedParent = null;
       this.abort.abort();
       this.host.remove();
     }
@@ -1852,7 +1921,8 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
       this.chat = chat;
       this.preference = preference;
       this.roomPreferences = roomPreferences;
-      this.favorites = favorites || new DanmakuFavorites();
+      this.favorites = favorites || new DanmakuFavorites(null, 100, String(live.roomId || ""));
+      this.favorites.setRoom?.(String(live.roomId || ""));
       this.ui = new OverlayUI(live.player);
       this.favoriteComposer = new DanmakuFavoriteComposer(chat, this.favorites, (text) => this.ui.message(text));
       this.favoriteComposer.start();
@@ -3604,7 +3674,7 @@ button{font:inherit;color:inherit;border:1px solid #ffffff2e;background:rgba(20,
         void 0 && console.warn("[douyin-ex] 20 \u79D2\u5185\u672A\u627E\u5230\u53EF\u9A8C\u8BC1\u7684\u76F4\u64AD\u9002\u914D\u5165\u53E3\uFF0C\u5DF2\u4FDD\u7559\u539F\u751F\u9875\u9762\u3002\u3002");
       }, 2e4);
     };
-    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.17.02" });
+    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.17.03" });
     window.addEventListener("pagehide", () => {
       stopProbe();
       clearInterval(roomWatch);

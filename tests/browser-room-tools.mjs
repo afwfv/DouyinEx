@@ -140,6 +140,7 @@ await test('danmaku-menu-exposes-favorite-toggle-state',async()=>{
 });
 await test('favorite-composer-selects-sends-and-deletes',async()=>{
   localStorage.removeItem('douyin-ex:v1:danmaku-favorites');
+  localStorage.removeItem('douyin-ex:v1:danmaku-favorites:room-a');
   const scope=document.createElement('div');scope.dataset.e2e='live-chatting';
   scope.style.cssText='position:fixed;left:24px;top:180px;width:420px;height:42px;display:flex;align-items:center;gap:8px;background:#22303e;padding:4px;z-index:20';
   const input=document.createElement('div');input.contentEditable='true';input.style.cssText='flex:1;min-width:120px;height:30px;padding:4px;background:#16212b';input.textContent='';
@@ -147,11 +148,16 @@ await test('favorite-composer-selects-sends-and-deletes',async()=>{
   scope.append(input,send);document.body.append(scope);
   const replaced=[],submitted=[],toasts=[];
   const adapter={findInput:()=>input,replace:async text=>{replaced.push(text);input.textContent=text;},submit:async text=>{submitted.push(text);}};
-  const favorites=new DanmakuFavorites(localStorage),composer=new DanmakuFavoriteComposer(adapter,favorites,text=>toasts.push(text));
+  const favorites=new DanmakuFavorites(localStorage,100,'room-a'),composer=new DanmakuFavoriteComposer(adapter,favorites,text=>toasts.push(text));
   composer.start();await pause(60);
   const trigger=composer.host.shadowRoot.querySelector('.trigger');
   assert(composer.host.style.display!=='none','composer stayed hidden with a visible input');
+  assert(composer.host.parentElement===scope,'favorite trigger is not embedded in the native composer');
+  assert(composer.host.nextElementSibling===send,'favorite trigger is not inline before the send button');
+  assert(getComputedStyle(composer.host).display==='flex','favorite host is not a native-row composer control: '+getComputedStyle(composer.host).display+' inline='+composer.host.style.display);
   assert(trigger.textContent==='收藏','unexpected empty trigger label');
+  composer.host.remove();await pause(50);
+  assert(composer.host.parentElement===scope&&composer.host.nextElementSibling===send,'composer did not reattach after native rerender');
   favorites.add({text:'第一条收藏',authorName:'甲'});favorites.add({text:'第二条收藏',authorName:'乙'});
   await pause();
   assert(trigger.textContent==='收藏 2','favorite count did not update: '+trigger.textContent);
@@ -169,7 +175,8 @@ await test('favorite-composer-selects-sends-and-deletes',async()=>{
   assert(favorites.list().length===1,'delete did not remove favorite');
   assert(favorites.list()[0].text==='第一条收藏','wrong favorite deleted: '+JSON.stringify(favorites.list()));
   assert(composer.panel.querySelectorAll('.item').length===1,'panel did not rerender after delete');
-  assert(new DanmakuFavorites(localStorage).list().length===1,'delete not persisted');
+  assert(new DanmakuFavorites(localStorage,100,'room-a').list().length===1,'delete not persisted');
+  assert(new DanmakuFavorites(localStorage,100,'room-b').list().length===0,'favorite leaked to another room');
   composer.dispose();scope.remove();
   assert(!composer.host.isConnected,'composer host not disposed');
   assert(toasts.some(text=>/已发送/.test(text)),'send confirmation missing');

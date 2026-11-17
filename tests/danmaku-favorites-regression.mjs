@@ -28,25 +28,27 @@ function types(area = storage()) {
 }
 
 test("empty-and-corrupt-stores-start-clean", () => {
-  const empty = new (types().DanmakuFavorites)();
+  const empty = new (types().DanmakuFavorites)(null, 100, "room-a");
   assert.equal(empty.list().length, 0);
-  const corrupt = new (types(storage("{broken")).DanmakuFavorites)();
+  const corrupt = new (types(storage("{broken")).DanmakuFavorites)(null, 100, "room-a");
   assert.equal(corrupt.list().length, 0);
   return { empty: 0, corrupt: 0 };
 });
 
 test("legacy-strings-are-migrated-deduplicated-and-trimmed", () => {
   const area = storage(JSON.stringify(["  first  ", { text: "second", authorName: " 甲 ", savedAt: 12 }, "first", { text: 42 }, null]));
-  const store = new (types(area).DanmakuFavorites)();
+  const store = new (types(area).DanmakuFavorites)(area, 100, "room-a");
   assert.equal(JSON.stringify(store.list().map((entry) => entry.text)), JSON.stringify(["first", "second"]));
   assert.equal(store.list()[1].authorName, "甲");
   assert.equal(store.list()[1].savedAt, 12);
+  assert.equal(area.getItem("douyin-ex:v1:danmaku-favorites"), null, "legacy global key was not migrated");
+  assert.ok(area.getItem("douyin-ex:v1:danmaku-favorites:room-a"), "room-specific key missing");
   return store.list();
 });
 
 test("add-toggle-remove-and-persistence", () => {
   const area = storage();
-  const api = types(area), store = new api.DanmakuFavorites(area), seen = [];
+  const api = types(area), store = new api.DanmakuFavorites(area, 100, "room-a"), seen = [];
   store.subscribe((entries) => seen.push(entries.length));
   assert.equal(store.add({ text: "  你好  ", authorName: " 小明 " }), true);
   assert.equal(store.add({ text: "你好", authorName: "另一个" }), false, "whitespace duplicate was accepted");
@@ -58,14 +60,22 @@ test("add-toggle-remove-and-persistence", () => {
   const secondToggle = store.toggle({ text: "第二条", authorName: "乙" });
   assert.equal(secondToggle.favorited, false); assert.equal(secondToggle.changed, true);
   assert.equal(store.remove("不存在"), false);
-  const restored = new api.DanmakuFavorites(area);
+  const restored = new api.DanmakuFavorites(area, 100, "room-a");
   assert.equal(JSON.stringify(restored.list().map((entry) => entry.text)), JSON.stringify(["你好"]));
   assert.equal(JSON.stringify(seen), JSON.stringify([1, 2, 1]));
-  return { persisted: restored.list(), events: seen };
+  const otherRoom = new api.DanmakuFavorites(area, 100, "room-b");
+  assert.equal(otherRoom.list().length, 0, "favorites leaked into another room");
+  otherRoom.add({ text: "另一个房间" });
+  assert.equal(JSON.stringify(restored.list().map((entry) => entry.text)), JSON.stringify(["你好"]), "room switch mutated the first room");
+  assert.equal(restored.setRoom("room-b"), true);
+  assert.equal(JSON.stringify(restored.list().map((entry) => entry.text)), JSON.stringify(["另一个房间"]));
+  restored.setRoom("room-a");
+  assert.equal(JSON.stringify(restored.list().map((entry) => entry.text)), JSON.stringify(["你好"]));
+  return { persisted: restored.list(), events: seen, isolatedRooms: true };
 });
 
 test("favorite-text-is-bounded-and-empty-is-rejected", () => {
-  const api = types(), store = new api.DanmakuFavorites();
+  const api = types(), store = new api.DanmakuFavorites(null, 100, "room-a");
   assert.equal(api.favoriteText("  x  "), "x");
   assert.equal(api.favoriteText("x".repeat(800)).length, 500);
   assert.equal(store.add({ text: "   " }), false);
@@ -74,7 +84,7 @@ test("favorite-text-is-bounded-and-empty-is-rejected", () => {
 });
 
 test("store-limit-keeps-newest-and-clear-emits-once", () => {
-  const api = types(), store = new api.DanmakuFavorites(null, 3), events = [];
+  const api = types(), store = new api.DanmakuFavorites(null, 3, "room-a"), events = [];
   store.subscribe((entries) => events.push(entries.length));
   for (const text of ["a", "b", "c", "d"]) store.add({ text });
   assert.equal(JSON.stringify(store.list().map((entry) => entry.text)), JSON.stringify(["d", "c", "b"]));
@@ -87,7 +97,7 @@ test("store-limit-keeps-newest-and-clear-emits-once", () => {
 test("storage-write-failure-keeps-memory-session", () => {
   const area = storage();
   area.setItem = () => { throw new Error("quota"); };
-  const api = types(area), store = new api.DanmakuFavorites(area);
+  const api = types(area), store = new api.DanmakuFavorites(area, 100, "room-a");
   assert.equal(store.add({ text: "仍可用" }), true);
   assert.equal(JSON.stringify(store.list().map((entry) => entry.text)), JSON.stringify(["仍可用"]));
   assert.equal(store.remove("仍可用"), true);
