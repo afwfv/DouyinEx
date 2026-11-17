@@ -142,7 +142,7 @@ await test('favorite-composer-selects-sends-and-deletes',async()=>{
   localStorage.removeItem('douyin-ex:v1:danmaku-favorites');
   localStorage.removeItem('douyin-ex:v1:danmaku-favorites:room-a');
   const scope=document.createElement('div');scope.dataset.e2e='live-chatting';
-  scope.style.cssText='position:fixed;left:24px;top:180px;width:420px;height:42px;display:flex;align-items:center;gap:8px;background:#22303e;padding:4px;z-index:20';
+  scope.style.cssText='position:fixed;left:24px;top:180px;width:420px;height:42px;display:flex;align-items:center;gap:8px;background:#22303e;padding:4px;z-index:20;transform:translateZ(0);overflow:hidden';
   const input=document.createElement('div');input.contentEditable='true';input.style.cssText='flex:1;min-width:120px;height:30px;padding:4px;background:#16212b';input.textContent='';
   const send=document.createElement('button');send.dataset.e2e='send';send.textContent='发送';
   scope.append(input,send);document.body.append(scope);
@@ -161,8 +161,15 @@ await test('favorite-composer-selects-sends-and-deletes',async()=>{
   favorites.add({text:'第一条收藏',authorName:'甲'});favorites.add({text:'第二条收藏',authorName:'乙'});
   await pause();
   assert(trigger.textContent==='收藏 2','favorite count did not update: '+trigger.textContent);
+  trigger.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true,composed:true,pointerId:2,button:0}));
   trigger.click();await pause();
   assert(!composer.panel.hidden,'favorite panel did not open');
+  assert(composer.popupHost.parentElement===document.body,'favorite panel is still trapped inside the native composer');
+  const panelRect=composer.panel.getBoundingClientRect();
+  assert(panelRect.width>200&&panelRect.height>20,'favorite panel has no visible box: '+JSON.stringify(panelRect));
+  assert(panelRect.top>=0&&panelRect.bottom<=innerHeight,'favorite panel is outside the viewport: '+JSON.stringify(panelRect));
+  trigger.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true,composed:true,pointerId:3,button:0}));
+  assert(!composer.panel.hidden,'pointerdown on the trigger closed its own panel');
   let items=[...composer.panel.querySelectorAll('.item')];
   assert(items.length===2,'favorite panel item count '+items.length);
   items[0].click();await pause(60);
@@ -179,6 +186,7 @@ await test('favorite-composer-selects-sends-and-deletes',async()=>{
   assert(new DanmakuFavorites(localStorage,100,'room-b').list().length===0,'favorite leaked to another room');
   composer.dispose();scope.remove();
   assert(!composer.host.isConnected,'composer host not disposed');
+  assert(!composer.popupHost.isConnected,'favorite panel host not disposed');
   assert(toasts.some(text=>/已发送/.test(text)),'send confirmation missing');
 });
 await test('fab-long-press-drag-persists-and-right-click-resets',async()=>{

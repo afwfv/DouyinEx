@@ -48,6 +48,12 @@
 
 ## 更新记录
 
+### 2026.11.17.04
+
+- 修复内嵌收藏按钮点击后面板不可见：触发器仍嵌在原生发送区，收藏列表面板移到 `document.body` 的独立顶层 host，不再受聊天容器的 `transform` / `overflow` 裁剪或错误定位。
+- 面板 pointerdown 判定同时识别内嵌触发器和顶层面板路径，点击触发器不会先被“点击外部关闭”逻辑吃掉；打开后按钮、列表和删除按钮仍可正常操作。
+- 新增带 `transform: translateZ(0); overflow: hidden` 的原生发送区 fixture，验证面板位于 body、可见矩形在视口内、pointerdown 不误关；收藏逻辑 7/7、Edge 房间工具 19/19。
+
 ### 2026.11.17.03
 
 - 收藏改为按直播间隔离：新数据写入 `douyin-ex:v1:danmaku-favorites:<roomId>`；切房重新加载对应列表，互不串数据。旧版全局 key 在首次进入直播间时迁移到该房间后删除。
