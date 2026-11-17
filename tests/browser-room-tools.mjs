@@ -95,15 +95,26 @@ await test('real-dom-win-dialog-is-retained',async()=>{
 await test('settings-ui-defaults-save-and-checkbox-wiring',async()=>{
   localStorage.clear();preferences=new RoomPreferences(values=>ui.setPreferences(values));ui=new OverlayUI(document.querySelector('.douyin-player'));
   ui.onPreferenceChange=(k,v)=>preferences.set(k,v);ui.setPreferences(preferences.read());ui.setState('native','本地界面验证');ui.openSettings();
-  assert(Object.entries(ui.featureInputs).every(([key,i])=>key==='hoverPause'?i.checked:!i.checked),'only hover pause keeps its previous default');assert(ui.featureInputs.autoLotteryFollow.disabled);
-  assert(!ui.advanced.open);assert(ui.keywordGroup.hidden);assert(ui.lotteryStatus.hidden);
-  assert(ui.panel.querySelector('.primary-options').children.length===5);
+  assert(Object.entries(ui.featureInputs).every(([key,i])=>key==='hoverPause'||key==='pointClaim'?i.checked:!i.checked),'hover pause and point claim should keep their previous defaults');assert(ui.featureInputs.autoLotteryFollow.disabled);
+  assert(!ui.advanced.open);assert(ui.keywordGroup.hidden);assert(ui.lotteryStatus.hidden);assert(!ui.pointStatus.hidden);
+  assert(ui.panel.querySelector('.primary-options').children.length===6);
   ui.featureInputs.hideRepeat.click();assert(preferences.read().hideRepeat);ui.featureInputs.autoLottery.click();assert(!ui.featureInputs.autoLotteryFollow.disabled);
   ui.featureInputs.filterKeywords.click();assert(!ui.keywordGroup.hidden);
   ui.keywordInput.value=' 广告\nABC ';ui.saveKeywords.click();assert(preferences.read().blockedKeywords==='广告\nABC');
   assert(new RoomPreferences().read().blockedKeywords==='广告\nABC');
   ui.keywordInput.value='未保存草稿';ui.featureInputs.simpleMode.click();assert(ui.keywordInput.value==='未保存草稿');ui.keywordInput.value=preferences.read().blockedKeywords;
   ui.setLotteryStatus('免费福袋：本地模拟已确认参与');
+  ui.setPointStatus('看播积分：本地模拟等待倒计时');
+  ui.setPointTag('积分 12');
+  ui.setAudience({value:4321,text:'4,321',seen:12000});
+  assert(ui.fabLabel.textContent==='弹幕增强 · 积分 12 · 在线 4,321','fab text: '+ui.fabLabel.textContent);
+  ui.featureInputs.pointClaim.click();
+  assert(preferences.read().pointClaim===false,'point claim did not persist off');
+  assert(ui.pointStatus.hidden,'point status should hide when disabled');
+  ui.featureInputs.pointClaim.click();
+  assert(preferences.read().pointClaim===true,'point claim did not restore');
+  assert(!ui.pointStatus.hidden);
+  ui.setPointTag('积分 0');
   ui.setFollow({fontSize:20,area:0.6,travelSeconds:14.4});
   assert(/字号 20/.test(ui.follow.textContent)&&/区域 60%/.test(ui.follow.textContent)&&/速度 14\.4s/.test(ui.follow.textContent),'follow summary: '+ui.follow.textContent);
   ui.featureInputs.hoverPause.click();
@@ -114,6 +125,30 @@ await test('settings-ui-defaults-save-and-checkbox-wiring',async()=>{
   assert(ui.panel.hidden,'Escape did not collapse the panel');
   ui.openSettings();
 });
+await test('fab-long-press-drag-persists-and-right-click-resets',async()=>{
+  document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}));
+  await pause();
+  const fab=ui.fab,rect=fab.getBoundingClientRect();
+  fab.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true,pointerId:1,button:0,clientX:rect.left+12,clientY:rect.top+10}));
+  await new Promise(resolve=>setTimeout(resolve,360));
+  assert(ui.dragging,'long press did not begin dragging');
+  fab.dispatchEvent(new PointerEvent('pointermove',{bubbles:true,pointerId:1,button:0,clientX:rect.left+92,clientY:rect.top+58}));
+  fab.dispatchEvent(new PointerEvent('pointerup',{bubbles:true,pointerId:1,button:0,clientX:rect.left+92,clientY:rect.top+58}));
+  fab.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}));
+  await pause();
+  const stored=JSON.parse(localStorage.getItem('douyin-ex:v1:fab-pos')||'null');
+  assert(stored&&Number.isFinite(stored.x)&&Number.isFinite(stored.y),'drag position was not stored');
+  assert(stored.x>Math.round(rect.left),'drag did not move horizontally: '+JSON.stringify({stored,x:rect.left}));
+  assert(ui.panel.hidden,'drag release opened the settings panel');
+  fab.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true}));
+  await pause();
+  assert(ui.manualX===null&&ui.manualY===null,'right click did not clear manual position');
+  assert(localStorage.getItem('douyin-ex:v1:fab-pos')===null,'right click did not clear stored position');
+  fab.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}));
+  await pause();
+  assert(!ui.panel.hidden,'short click no longer opens settings');
+});
+
 await test('settings-panel-stays-in-viewport-and-scrolls',async()=>{
   ui.positionFloating();const rect=ui.panel.getBoundingClientRect();
   assert(rect.left>=0&&rect.right<=innerWidth&&rect.top>=0&&rect.bottom<=innerHeight,JSON.stringify(rect));

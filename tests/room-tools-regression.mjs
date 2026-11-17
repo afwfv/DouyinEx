@@ -74,10 +74,12 @@ function fixture() {
 await test('new-settings-default-off-and-text-roundtrip', () => {
   const f = fixture(), changes = [], p = new f.api.RoomPreferences((v) => changes.push(v));
   for (const key of ['simpleMode','autoLottery','autoLotteryFollow','hideEnter','hideRepeat','filterKeywords']) assert.equal(p.read()[key], false);
-  p.set('blockedKeywords', '  Foo  \n\n广告\nＡＢＣ'); p.set('hideRepeat', true);
+  assert.equal(p.read().pointClaim, true);
+  p.set('blockedKeywords', '  Foo  \n\n广告\nＡＢＣ'); p.set('hideRepeat', true); p.set('pointClaim', false);
   const restored = new f.api.RoomPreferences();
   assert.equal(restored.read().blockedKeywords, 'Foo\n广告\nＡＢＣ');
-  assert.equal(restored.read().hideRepeat, true); assert.equal(f.tasks.size, 0);
+  assert.equal(restored.read().hideRepeat, true); assert.equal(restored.read().pointClaim, false); assert.equal(f.tasks.size, 0);
+  restored.set('pointClaim', true); assert.equal(restored.read().pointClaim, true);
   p.set('blockedKeywords', Array.from({ length: 120 }, (_, i) => 'word' + i).join('\n'));
   assert.equal(p.read().blockedKeywords.split('\n').length, 100);
   p.set('blockedKeywords', 'x'.repeat(5000)); assert.equal(p.read().blockedKeywords.length, 4000);

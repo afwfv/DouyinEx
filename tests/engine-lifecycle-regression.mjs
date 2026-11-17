@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import { source, moduleType } from "./load.mjs";
-import { patchEngineLifecycle } from "../patch-engine-lifecycle.mjs";
 
 const input = source(process.argv[2]);
-const text = process.argv.includes("--patched") ? patchEngineLifecycle(input) : input;
+const text = process.argv.includes("--patched")
+  ? (await import("../patch-engine-lifecycle.mjs")).patchEngineLifecycle(input)
+  : input;
 const results = [];
 
 function fixture() {

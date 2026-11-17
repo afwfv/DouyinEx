@@ -2,8 +2,8 @@
 // @name         DouyinEx - 抖音直播间增强插件
 // @namespace    https://github.com/afwfv/DouyinEx
 // @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
-// @version      2026.11.16.04
-// @description  弹幕悬停、+1、回复、最高画质、礼物屏蔽、PK真实分数、自动免费福袋、简洁模式、进场/重复/关键词过滤
+// @version      2026.11.17.01
+// @description  弹幕悬停、+1、回复、最高画质、礼物屏蔽、PK真实分数、自动免费福袋、看播积分、简洁模式、进场/重复/关键词过滤、悬浮条拖动
 // @author       DD (afwfv)
 // @homepageURL  https://github.com/afwfv/DouyinEx
 // @supportURL   https://github.com/afwfv/DouyinEx/issues
@@ -776,8 +776,196 @@ function parseLotteryResultText(text) {
     }
     dispose() { this.stop(); this.enabled = false; this.signature = ""; }
   };
+  // src/enhancements/point-claim.ts
+  var POINT_API = "/webcast/quiz/box/";
+  function pickupPoint(payload, box) {
+    const skip = /(countdown|box_id|room_id|status|type|level|_id$|_time$|_at$)/i;
+    const match = /(point|score|integral|credit|reward|award)/i;
+    const scan = (node, depth) => {
+      if (!node || typeof node !== "object" || depth > 3) return 0;
+      for (const key of Object.keys(node)) {
+        if (skip.test(key)) continue;
+        const value = node[key];
+        if (typeof value === "number" && match.test(key) && value > 0 && value < 1e6 && Math.floor(value) === value) return value;
+        if (value && typeof value === "object") {
+          const nested = scan(value, depth + 1);
+          if (nested) return nested;
+        }
+      }
+      return 0;
+    };
+    return scan(payload, 0) || scan(box, 0);
+  }
+  function pointWait(ms, signal) {
+    if (signal.aborted) return Promise.resolve(false);
+    return new Promise((resolve) => {
+      let timer = 0;
+      const finish = (completed) => {
+        clearTimeout(timer);
+        signal.removeEventListener("abort", aborted);
+        resolve(completed);
+      };
+      const aborted = () => finish(false);
+      timer = setTimeout(() => finish(true), ms);
+      signal.addEventListener("abort", aborted, { once: true });
+    });
+  }
+  var PointClaim = class {
+    constructor(onStatus = () => {}, onTag = () => {}) {
+      this.onStatus = onStatus;
+      this.onTag = onTag;
+    }
+    signature = "";
+    roomId = "";
+    enabled = false;
+    timer = 0;
+    busy = false;
+    doneRoom = "";
+    claimed = 0;
+    points = 0;
+    generation = 0;
+    abort = new AbortController();
+    claimedIds = /* @__PURE__ */ new Set();
+    configure(values = {}, roomId = this.roomId) {
+      const signature = JSON.stringify([!!values.pointClaim, roomId]);
+      if (this.signature === signature) return;
+      this.stop();
+      this.signature = signature;
+      if (roomId !== this.roomId) {
+        this.claimed = 0;
+        this.points = 0;
+        this.claimedIds.clear();
+      }
+      this.roomId = roomId;
+      this.enabled = !!values.pointClaim;
+      if (!this.enabled) {
+        this.claimed = 0;
+        this.points = 0;
+        this.claimedIds.clear();
+        this.onTag("");
+        this.onStatus("看播积分：未开启");
+        return;
+      }
+      this.onTag(this.tagText());
+      if (!roomId) { this.onStatus("看播积分：等待进入直播间"); return; }
+      if (this.doneRoom === roomId) { this.onStatus("看播积分：本场已领完"); return; }
+      this.onStatus("看播积分：进房 1 分钟后开始检查");
+      this.schedule(6e4);
+    }
+    tagText() {
+      if (this.points > 0) return "积分 " + this.points;
+      if (this.claimed > 0) return "积分 +" + this.claimed + " 箱";
+      return "积分 0";
+    }
+    valid(signal) {
+      const urlRoom = /^\/(\d{5,})/.exec(location.pathname)?.[1];
+      return !signal.aborted && this.enabled && !document.hidden && urlRoom === this.roomId && this.doneRoom !== this.roomId;
+    }
+    stop() {
+      this.generation += 1;
+      this.abort.abort();
+      this.abort = new AbortController();
+      clearTimeout(this.timer);
+      this.timer = 0;
+      this.busy = false;
+    }
+    schedule(delay) {
+      clearTimeout(this.timer);
+      const generation = this.generation;
+      const signal = this.abort.signal;
+      this.timer = setTimeout(() => {
+        this.timer = 0;
+        if (!signal.aborted && generation === this.generation) void this.run(generation, signal);
+      }, delay);
+    }
+    api(name, params, signal) {
+      const query = new URLSearchParams(Object.assign({
+        aid: "6383",
+        app_name: "douyin_web",
+        live_id: "1",
+        device_platform: "web",
+        language: "zh-CN",
+        enter_from: "link_share"
+      }, params));
+      return fetch(POINT_API + name + "?" + query.toString(), { credentials: "include", signal }).then((response) => response.ok ? response.json() : null);
+    }
+    async run(generation, signal) {
+      if (this.busy || signal.aborted || generation !== this.generation || !this.enabled) return;
+      if (!this.valid(signal)) {
+        if (!signal.aborted && this.enabled && this.roomId && this.doneRoom !== this.roomId) this.schedule(3e4);
+        return;
+      }
+      this.busy = true;
+      const roomId = this.roomId;
+      try {
+        const result = await this.api("enter", { room_id: roomId, box_id: "-1" }, signal);
+        if (signal.aborted || generation !== this.generation || !this.enabled) return;
+        let boxes = result && result.status_code === 0 && result.data ? result.data.boxs : null;
+        if (!Array.isArray(boxes)) {
+          this.onStatus("看播积分：查询失败，稍后重试");
+          this.schedule(9e4);
+          return;
+        }
+        let claims = 0;
+        const ready = boxes.filter((item) => item && item.status === 2 && !this.claimedIds.has(String(item.box_id)));
+        for (const box of ready) {
+          if (!this.valid(signal)) return;
+          const click = await this.api("click", { room_id: roomId, box_id: String(box.box_id) }, signal);
+          if (signal.aborted || generation !== this.generation || !this.enabled) return;
+          if (!click || click.status_code !== 0) break;
+          claims += 1;
+          this.claimed += 1;
+          this.claimedIds.add(String(box.box_id));
+          this.points += pickupPoint(click.data, box);
+          this.onTag(this.tagText());
+          if (click.data && Array.isArray(click.data.boxs)) boxes = click.data.boxs;
+          else boxes = boxes.map((item) => item && String(item.box_id) === String(box.box_id) ? { ...item, status: 3 } : item);
+          if (!await pointWait(900, signal)) return;
+        }
+        if (signal.aborted || generation !== this.generation || !this.enabled) return;
+        const pending = boxes.filter((item) => item && item.status !== 3 && !this.claimedIds.has(String(item.box_id)));
+        if (boxes.length && !pending.length) {
+          this.doneRoom = roomId;
+          this.stop();
+          this.onStatus("看播积分：本场全部领完");
+          return;
+        }
+        if (claims) this.onStatus("看播积分：已领取 " + claims + " 个，继续等下一轮");
+        const counting = pending.filter((item) => item.status === 1 && Number(item.countdown_time) > 0);
+        let wait = 3e5;
+        if (counting.length) wait = Math.min(...counting.map((item) => Number(item.countdown_time))) * 1e3;
+        else if (pending.some((item) => item.status === 2)) wait = 6e4;
+        if (!claims) this.onStatus(counting.length ? "看播积分：等待箱子倒计时" : "看播积分：等待新箱子");
+        this.schedule(Math.max(15e3, wait + 1e4 + Math.random() * 2e4));
+      } catch {
+        if (!signal.aborted && generation === this.generation && this.enabled) {
+          this.onStatus("看播积分：请求异常，稍后重试");
+          this.schedule(9e4);
+        }
+      } finally {
+        if (generation === this.generation) this.busy = false;
+      }
+    }
+    dispose() {
+      this.stop();
+      this.enabled = false;
+      this.signature = "";
+      this.roomId = "";
+      this.doneRoom = "";
+      this.claimed = 0;
+      this.points = 0;
+      this.claimedIds.clear();
+      this.onTag("");
+    }
+  };
   var RoomEnhancements = class {
-    constructor(onStatus = () => {}) { this.lottery = new FreeLottery(onStatus); }
+    constructor(onStatus = () => {}) {
+      this.lottery = new FreeLottery((text) => onStatus(text, "lottery"));
+      this.points = new PointClaim(
+        (text) => onStatus(text, "points"),
+        (tag) => onStatus(tag, "point-tag")
+      );
+    }
     content = new ChatContentFilter();
     simple = new SimpleRoomMode();
     roomId = "";
@@ -787,10 +975,11 @@ function parseLotteryResultText(text) {
       this.content.configure(values, roomId);
       this.simple.configure(!!values.simpleMode);
       this.lottery.configure(values, roomId);
+      this.points.configure(values, roomId);
     }
     attach(roomId) { if (roomId !== this.roomId) this.configure(this.values, roomId); }
     start(values, roomId) { this.configure(values, roomId); this.content.start(); }
-    dispose() { this.content.dispose(); this.simple.dispose(); this.lottery.dispose(); }
+    dispose() { this.content.dispose(); this.simple.dispose(); this.lottery.dispose(); this.points.dispose(); }
   };
 
   // src/ui/overlay.ts
@@ -818,7 +1007,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
 .options input{accent-color:#6bcebd}
 .options label{display:flex;align-items:center;gap:8px;color:#c0c7d0;cursor:pointer}
 .options input{width:15px;height:15px;margin:0;accent-color:#ff8a35}
-.fab{position:fixed;left:0;top:0;z-index:2147483000;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border:1px solid #ffffff30;border-radius:13px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;line-height:1;pointer-events:auto;white-space:nowrap;backdrop-filter:blur(4px)}
+.fab{position:fixed;left:0;top:0;z-index:2147483000;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border:1px solid #ffffff30;border-radius:13px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;line-height:1;pointer-events:auto;white-space:nowrap;touch-action:none;user-select:none;backdrop-filter:blur(4px)}
 .fab:hover{background:rgba(0,0,0,.82);border-color:#ff8a35;color:#ff8a35}
 .fab[aria-expanded=true]{border-color:#ff8a35;color:#ff8a35}
 .fab-dot{width:6px;height:6px;flex:none;border-radius:50%;background:#9ca6b4}
@@ -885,7 +1074,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.featureInputs = {};
       const primary = element("div", "options primary-options");
       this.advanced.append(element("summary", "", "更多设置"), preferences, this.metrics, this.hint);
-      for (const [key, title] of [["simpleMode", "简洁模式"], ["hideEnter", "屏蔽进场消息"], ["hideRepeat", "过滤重复弹幕"], ["filterKeywords", "自定义屏蔽词"], ["autoLottery", "自动免费福袋"], ["autoLotteryFollow", "允许福袋自动关注"], ["hoverPause", "悬停暂停单条弹幕"]]) {
+      for (const [key, title] of [["simpleMode", "简洁模式"], ["hideEnter", "屏蔽进场消息"], ["hideRepeat", "过滤重复弹幕"], ["filterKeywords", "自定义屏蔽词"], ["autoLottery", "自动免费福袋"], ["pointClaim", "自动领取看播积分"], ["autoLotteryFollow", "允许福袋自动关注"], ["hoverPause", "悬停暂停单条弹幕"]]) {
         const input = element("input"), label = element("label");
         input.type = "checkbox"; input.dataset.preference = key;
         label.append(input, document.createTextNode(title));
@@ -893,6 +1082,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         if (key === "hoverPause") label.title = "鼠标移到弹幕上时暂停这一条和同轨后方，移开后恢复；关闭后弹幕不再停顿";
         if (key === "hideRepeat") label.title = "同一句话在 10 秒内只显示一次（666/6666、哈哈哈/哈哈 这类变体也算重复）";
         if (key === "autoLottery") label.title = "包含官方一键评论参与；跳过未满足的付费条件，中奖弹窗保留";
+        if (key === "pointClaim") label.title = "进房 60 秒后检查看播积分箱子，只领取可领取的免费箱子；本场领完后停止";
       }
       const keywordLabel = element("label", "", "每行一个词，包含即屏蔽");
       keywordLabel.htmlFor = "douyin-ex-keywords";
@@ -903,7 +1093,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.keywordInput.placeholder = "每行一条，最多 100 条 / 4000 字符";
       this.saveKeywords.type = "button";
       this.keywordGroup.append(keywordLabel, this.keywordInput, this.saveKeywords);
-      this.panel.append(element("strong", "", "直播工具"), this.status, this.follow, primary, this.keywordGroup, this.lotteryStatus, this.advanced);
+      this.panel.append(element("strong", "", "直播工具"), this.status, this.follow, primary, this.keywordGroup, this.lotteryStatus, this.pointStatus, this.advanced);
       const footer = element("footer"), close = element("button", "", "\u6536\u8D77");
       close.type = "button";
       footer.append(this.toggleAction, close);
@@ -988,6 +1178,14 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     fabTransform = "";
     panelTransform = "";
     audienceCount = 0;
+    audienceDisplay = "";
+    seenText = "";
+    pointTag = "";
+    manualX = null;
+    manualY = null;
+    dragging = false;
+    suppressClick = false;
+    dragBound = false;
     numberFormat = new Intl.NumberFormat("zh-CN");
     status = element("p");
     follow = element("p", "follow");
@@ -1006,7 +1204,15 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     savedKeywords;
     saveKeywords = element("button", "", "保存关键词");
     lotteryStatus = element("p", "lottery-status", "免费福袋：未开启");
+    pointStatus = element("p", "lottery-status", "看播积分：未开启");
     setLotteryStatus(text) { this.lotteryStatus.textContent = text; this.positionFloating(); }
+    setPointStatus(text) { this.pointStatus.textContent = text; this.positionFloating(); }
+    setPointTag(tag) {
+      const next = typeof tag === "string" ? tag : "";
+      if (this.pointTag === next) return;
+      this.pointTag = next;
+      this.renderFab();
+    }
     onPreferenceChange = () => {
     };
     plus = element("button", "plus", "+1");
@@ -1039,24 +1245,134 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       const data = value && typeof value === "object" ? value : { value };
       const count = Number(data.value);
       this.audienceCount = Number.isFinite(count) && count > 0 ? Math.round(count) : 0;
-      const display = this.audienceCount ? typeof data.text === "string" && data.text ? data.text : this.numberFormat.format(this.audienceCount) : "";
+      this.audienceDisplay = this.audienceCount
+        ? (typeof data.text === "string" && data.text ? data.text : this.numberFormat.format(this.audienceCount))
+        : "";
       const seen = Number(data.seen);
-      const seenText = Number.isFinite(seen) && seen > 0 ? this.numberFormat.format(Math.round(seen)) : "";
-      const text = this.audienceCount ? `\u5F39\u5E55\u589E\u5F3A \xB7 \u5728\u7EBF ${display}` : "\u5F39\u5E55\u589E\u5F3A";
-      const title = this.audienceCount ? `\u5728\u7EBF\u89C2\u4F17 ${display}${seenText ? ` \xB7 \u672C\u573A\u4EBA\u770B\u8FC7 ${seenText}` : ""}\uFF0C\u70B9\u51FB\u6253\u5F00\u8BBE\u7F6E` : "\u6253\u5F00\u5F39\u5E55\u589E\u5F3A\u8BBE\u7F6E";
+      this.seenText = Number.isFinite(seen) && seen > 0 ? this.numberFormat.format(Math.round(seen)) : "";
+      this.renderFab();
+    }
+    renderFab() {
+      const display = this.audienceDisplay, seenText = this.seenText;
+      const parts = ["\u5F39\u5E55\u589E\u5F3A"];
+      if (this.pointTag) parts.push(this.pointTag);
+      if (this.audienceCount) parts.push(`\u5728\u7EBF ${display}`);
+      const text = parts.join(" \xB7 ");
+      const title = this.audienceCount
+        ? `\u5728\u7EBF\u89C2\u4F17 ${display}${seenText ? ` \xB7 \u672C\u573A\u4EBA\u770B\u8FC7 ${seenText}` : ""}\uFF0C\u70B9\u51FB\u6253\u5F00\u8BBE\u7F6E\uFF1B\u957F\u6309\u62D6\u52A8\uFF0C\u53F3\u952E\u590D\u4F4D`
+        : "\u6253\u5F00\u5F39\u5E55\u589E\u5F3A\u8BBE\u7F6E\uFF1B\u957F\u6309\u62D6\u52A8\uFF0C\u53F3\u952E\u590D\u4F4D";
       if (this.fab.title !== title) this.fab.title = title;
       if (this.fabLabel.textContent !== text) {
         this.fabLabel.textContent = text;
         this.positionFloating();
       }
     }
+    saveFabPosition() {
+      try {
+        localStorage.setItem("douyin-ex:v1:fab-pos", JSON.stringify({
+          x: Math.round(this.manualX),
+          y: Math.round(this.manualY)
+        }));
+      } catch {
+      }
+    }
+    loadFabPosition() {
+      try {
+        const raw = localStorage.getItem("douyin-ex:v1:fab-pos");
+        if (!raw) return;
+        const pos = JSON.parse(raw);
+        if (Number.isFinite(pos?.x) && Number.isFinite(pos?.y)) {
+          this.manualX = pos.x;
+          this.manualY = pos.y;
+        }
+      } catch {
+      }
+    }
+    resetFabPosition() {
+      this.manualX = null;
+      this.manualY = null;
+      try {
+        localStorage.removeItem("douyin-ex:v1:fab-pos");
+      } catch {
+      }
+      this.positionFloating();
+    }
+    bindDrag() {
+      if (this.dragBound || !this.fab) return;
+      this.dragBound = true;
+      this.loadFabPosition();
+      const fab = this.fab, signal = this.abort.signal;
+      let hold = 0, pointerId = 0, startX = 0, startY = 0, baseX = 0, baseY = 0, moved = false;
+      fab.addEventListener("pointerdown", (event) => {
+        if (event.button !== 0) return;
+        this.suppressClick = false;
+        pointerId = event.pointerId;
+        startX = event.clientX;
+        startY = event.clientY;
+        const rect = fab.getBoundingClientRect();
+        baseX = rect.left;
+        baseY = rect.top;
+        moved = false;
+        clearTimeout(hold);
+        hold = setTimeout(() => {
+          hold = 0;
+          this.dragging = true;
+          fab.style.cursor = "grabbing";
+          try { fab.setPointerCapture(pointerId); } catch {
+          }
+        }, 320);
+      }, { signal });
+      fab.addEventListener("pointermove", (event) => {
+        if (!this.dragging) {
+          if (hold && (Math.abs(event.clientX - startX) > 6 || Math.abs(event.clientY - startY) > 6)) {
+            clearTimeout(hold);
+            hold = 0;
+          }
+          return;
+        }
+        moved = true;
+        event.preventDefault();
+        const width = fab.offsetWidth || 88, height = fab.offsetHeight || 26;
+        this.manualX = Math.max(4, Math.min(innerWidth - width - 4, baseX + event.clientX - startX));
+        this.manualY = Math.max(4, Math.min(innerHeight - height - 4, baseY + event.clientY - startY));
+        this.positionFloating();
+      }, { passive: false, signal });
+      const finish = () => {
+        clearTimeout(hold);
+        hold = 0;
+        if (!this.dragging) return;
+        this.dragging = false;
+        fab.style.cursor = "";
+        if (moved) {
+          this.suppressClick = true;
+          this.saveFabPosition();
+        }
+      };
+      fab.addEventListener("pointerup", finish, { signal });
+      fab.addEventListener("pointercancel", finish, { signal });
+      fab.addEventListener("click", (event) => {
+        if (!this.suppressClick) return;
+        this.suppressClick = false;
+        event.preventDefault();
+        event.stopPropagation();
+      }, { capture: true, signal });
+      fab.addEventListener("contextmenu", (event) => {
+        event.preventDefault();
+        this.resetFabPosition();
+      }, { signal });
+      signal.addEventListener("abort", () => clearTimeout(hold), { once: true });
+    }
     positionFloating() {
       if (!this.fab.isConnected) return;
+      this.bindDrag();
       const width = this.fab.offsetWidth || 88, height = this.fab.offsetHeight || 26;
       if (!this.anchorEl?.isConnected) this.anchorEl = document.querySelector('[data-e2e="live-room-audience"]');
       const anchor = this.anchorEl;
       let x, y;
-      if (anchor) {
+      if (this.manualX !== null && this.manualY !== null) {
+        x = this.manualX;
+        y = this.manualY;
+      } else if (anchor) {
         const rect = anchor.getBoundingClientRect();
         x = rect.right + 10;
         y = rect.top + (rect.height - height) / 2;
@@ -1119,6 +1435,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
       this.featureInputs.autoLotteryFollow.disabled = !values?.autoLottery;
       this.keywordGroup.hidden = !values?.filterKeywords;
       this.lotteryStatus.hidden = !values?.autoLottery;
+      this.pointStatus.hidden = !values?.pointClaim;
       const keywords = values?.blockedKeywords || "";
       if (this.savedKeywords !== keywords) { this.keywordInput.value = keywords; this.savedKeywords = keywords; }
       this.positionFloating();
@@ -2528,6 +2845,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
   var PREF_HIDE_GIFT_DANMAKU = "douyin-ex:v1:hide-gift-danmaku";
   var PREF_PK_NUMBERS = "douyin-ex:v1:pk-numbers";
   var PREF_HOVER_PAUSE = "douyin-ex:v1:hover-pause";
+  var PREF_POINT_CLAIM = "douyin-ex:v1:point-claim";
   var EXTRA_PREFS = { simpleMode: "simple-mode", autoLottery: "auto-lottery", autoLotteryFollow: "auto-lottery-follow", hideEnter: "hide-enter", hideRepeat: "hide-repeat", filterKeywords: "filter-keywords", blockedKeywords: "blocked-keywords", hoverPause: "hover-pause" };
   function cleanKeywordRules(value) { return String(value ?? "").slice(0, 4000).split(/\r?\n/).map((line) => line.trim()).filter(Boolean).slice(0, 100).join("\n"); }
   function readKeywordRules() { try { return cleanKeywordRules(localStorage.getItem("douyin-ex:v1:blocked-keywords") || ""); } catch { return ""; } }
@@ -2638,7 +2956,8 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         pkNumbers: readFlag(PREF_PK_NUMBERS, true),
         ...Object.fromEntries(Object.entries(EXTRA_PREFS).filter(([key]) => key !== "blockedKeywords").map(([key, name]) => [key, readFlag("douyin-ex:v1:" + name, false)])),
         blockedKeywords: readKeywordRules(),
-        hoverPause: readFlag(PREF_HOVER_PAUSE, true)
+        hoverPause: readFlag(PREF_HOVER_PAUSE, true),
+        pointClaim: readFlag(PREF_POINT_CLAIM, true)
       };
     }
     roomId = "";
@@ -2661,7 +2980,8 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         shieldGift: PREF_SHIELD_GIFT,
         hideGiftDanmaku: PREF_HIDE_GIFT_DANMAKU,
         pkNumbers: PREF_PK_NUMBERS,
-        hoverPause: PREF_HOVER_PAUSE
+        hoverPause: PREF_HOVER_PAUSE,
+        pointClaim: PREF_POINT_CLAIM
       };
       writeFlag(keyNames[key] || "douyin-ex:v1:" + EXTRA_PREFS[key], this.values[key]);
       const affectsRoom = key === "autoQuality" || key === "shieldGift";
@@ -2813,7 +3133,22 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
     const chatFilter = new ChatGiftFilter();
     const pkNumbers = new PkNumbers();
     let lotteryStatus = "免费福袋：未开启";
-    const enhancements = new RoomEnhancements((text) => { lotteryStatus = text; app?.ui.setLotteryStatus(text); });
+    let pointStatus = "看播积分：未开启";
+    let pointTag = "";
+    const enhancements = new RoomEnhancements((text, channel = "lottery") => {
+      if (channel === "point-tag") {
+        pointTag = text;
+        app?.ui.setPointTag(text);
+        return;
+      }
+      if (channel === "points") {
+        pointStatus = text;
+        app?.ui.setPointStatus(text);
+        return;
+      }
+      lotteryStatus = text;
+      app?.ui.setLotteryStatus(text);
+    });
     const preferences = new RoomPreferences((values) => {
       chatFilter.setEnabled(values.hideGiftDanmaku !== false);
       pkNumbers.setEnabled(values.pkNumbers !== false);
@@ -2862,6 +3197,8 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         preferences.attach(live.roomId || roomIdFromUrl());
         enhancements.attach(roomIdFromUrl());
         app.ui.setLotteryStatus(lotteryStatus);
+        app.ui.setPointStatus(pointStatus);
+        app.ui.setPointTag(pointTag);
         app.onInvalid = () => {
           const stale = app;
           app = void 0;
@@ -2908,7 +3245,7 @@ button:hover{background:#ffffff28}button:disabled{opacity:.4;cursor:default}butt
         void 0 && console.warn("[douyin-ex] 20 \u79D2\u5185\u672A\u627E\u5230\u53EF\u9A8C\u8BC1\u7684\u76F4\u64AD\u9002\u914D\u5165\u53E3\uFF0C\u5DF2\u4FDD\u7559\u539F\u751F\u9875\u9762\u3002\u3002");
       }, 2e4);
     };
-    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.16.04" });
+    Object.defineProperty(window, KEY, { configurable: true, value: "2026.11.17.01" });
     window.addEventListener("pagehide", () => {
       stopProbe();
       clearInterval(roomWatch);

@@ -95,6 +95,7 @@ test('fractional-player-geometry-does-not-reset-canvas', () => {
   const engine = { resize: (...args) => resizes.push(args) };
   const window = { devicePixelRatio: 1 };
   const controller = new (create(window, box => box))(player, ui, engine);
+  controller.scheduleResize = () => resizes.push([controller.layout.width, controller.layout.height, controller.layout.dpr]);
   controller.measure();
   assert.equal(resizes.length, 1);
   playerRect.width = 800.4; playerRect.height = 450.4; playerRect.left = 10.4;
